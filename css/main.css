@@ -1199,7 +1199,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4e8aff;
+  background: #8cff11;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2700,6 +2700,9 @@ ul.breadcrumb li + li:last-child {
 }
 .site-brand-container {
   background: linear-gradient(120deg, rgba(254,172,94,0.5), rgba(199,121,208,0.5), rgba(75,192,200,0.5));
+}
+canvas#canvas {
+  margin-top: 30px;
 }
 /*.posts-expand {
   .post-eof {
