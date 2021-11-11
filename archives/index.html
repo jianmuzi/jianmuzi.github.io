@@ -597,9 +597,9 @@ if(canvas.getContext){
             }
         }
         //增加小球
-        for(var i = 0; i< changeNumArray.length; i++){
-            addBalls.apply(this,changeNumArray[i].split('_'));
-        }
+//        for(var i = 0; i< changeNumArray.length; i++){
+//            addBalls.apply(this,changeNumArray[i].split('_'));
+//        }
         data = NewData.concat();
     }
 
@@ -646,6 +646,7 @@ if(canvas.getContext){
             renderDigit(i,data[i]);
         }
         //渲染小球
+/*
         for(var i = 0; i < balls.length; i++){
             cxt.beginPath();
             cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
@@ -653,6 +654,7 @@ if(canvas.getContext){
             cxt.closePath();
             cxt.fill();
         }
+*/
     }
 
     clearInterval(oTimer);
@@ -660,7 +662,7 @@ if(canvas.getContext){
         //更新时钟
         updateDigitTime();
         //更新小球状态
-        updateBalls();
+        //updateBalls();
         //渲染
         render();
     },50);
