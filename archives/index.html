@@ -95,13 +95,16 @@
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-first">
+</span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
+
   <div class="site-meta">
+
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
@@ -109,6 +112,8 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
+
+
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
@@ -140,11 +145,6 @@
         <li class="menu-item menu-item-categories">
 
     <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-schedule">
-
-    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -200,13 +200,33 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 4 篇日志。 继续努力。</span>
+        <span class="collection-header">嗯..! 目前共计 5 篇日志。 继续努力。</span>
       </div>
 
       
     <div class="collection-year">
       <span class="collection-header">2021</span>
     </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2021-11-14T11:36:28+08:00"
+              content="2021-11-14">
+          11-14
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/archives/01/" itemprop="url">
+            <span itemprop="name">test</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
@@ -220,7 +240,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/posts/21ef72c5/" itemprop="url">
+          <a class="post-title-link" href="/2021-11-08/test-abbrlink/" itemprop="url">
             <span itemprop="name">测试-abbrlink</span>
           </a>
       </div>
@@ -248,46 +268,6 @@
     </header>
   </article>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-11-06T18:18:19+08:00"
-              content="2021-11-06">
-          11-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/4a17b156/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-10-30T10:45:13+08:00"
-              content="2021-10-30">
-          10-30
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/f9263446/" itemprop="url">
-            <span itemprop="name">扩容挂载点</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
 
     </div>
   </div>
@@ -296,6 +276,9 @@
   
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -362,20 +345,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -678,7 +661,27 @@ if(canvas.getContext){
 </script>
 
 <!--添加谷歌日历，jianmuzi-->
+<!--需要科学上网
 <iframe src="https://calendar.google.com/calendar/embed?height=200&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FShanghai&showTitle=0&showPrint=0&showTabs=0&showTz=0&showDate=1&showNav=1&showCalendars=0&title" style="border:solid 1px #777" width="200" height="200" frameborder="0" scrolling="no"></iframe>
+故注释-->
+
+
+<!--天气api插件，https://www.tianqiapi.com/index/plugin-->
+<!--太卡了，故注释掉
+<iframe 
+scrolling="no" 
+src="https://tianqiapi.com/api.php?style=tx&skin=pitaya" 
+frameborder="0" 
+width="80%" 
+height="40" 
+allowtransparency="true"
+align="center"
+paddingtop=""
+paddingleft=""
+fontsize="15"
+color="#BEBEBE"
+></iframe> 
+-->
         <div class="back-to-top motion-element">
           <i class="fa fa-arrow-up"></i>
           <span>0%</span>
@@ -710,7 +713,7 @@ if(canvas.getContext){
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">4k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
