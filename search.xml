@@ -196,23 +196,23 @@
       </tags>
   </entry>
   <entry>
-    <title>测试-permalink</title>
-    <url>//archives/test/</url>
-    <content><![CDATA[<!--前言-->
+    <title>test</title>
+    <url>//archives/01/</url>
+    <content><![CDATA[<!--前言-->  
+<p>测试本页代码下载<br>设置永久链接permalink: archives/01，其中01不能带后缀</p>
+<p>测试代码高亮</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line"></span><br><span class="line">$ hexo server</span><br><span class="line"></span><br><span class="line">$ hexo generate</span><br><span class="line"></span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-
-<p>~test_permalink</p>
 <span id="more"></span>
-
 
 
 <h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
       <categories>
-        <category>test</category>
+        <category>1</category>
       </categories>
       <tags>
-        <tag>permalink</tag>
-        <tag>test</tag>
+        <tag>name01</tag>
+        <tag>name02</tag>
       </tags>
   </entry>
   <entry>
@@ -231,28 +231,28 @@
         <category>test</category>
       </categories>
       <tags>
-        <tag>test</tag>
         <tag>abbrlink</tag>
+        <tag>test</tag>
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>//archives/01/</url>
-    <content><![CDATA[<!--前言-->  
-<p>测试本页代码下载<br>设置永久链接permalink: archives/01，其中01不能带后缀</p>
-<p>测试代码高亮</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line"></span><br><span class="line">$ hexo server</span><br><span class="line"></span><br><span class="line">$ hexo generate</span><br><span class="line"></span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+    <title>测试-permalink</title>
+    <url>//archives/test/</url>
+    <content><![CDATA[<!--前言-->
 
+
+<p>~test_permalink</p>
 <span id="more"></span>
+
 
 
 <h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
       <categories>
-        <category>1</category>
+        <category>test</category>
       </categories>
       <tags>
-        <tag>name01</tag>
-        <tag>name02</tag>
+        <tag>test</tag>
+        <tag>permalink</tag>
       </tags>
   </entry>
 </search>
