@@ -2894,19 +2894,19 @@ mark.search-keyword {
 .headband {
   display: none;
 }
-.site-brand-container {
+.header-inner {
   margin-top: 10px;
 }
 .main-inner {
   margin-top: 10px;
 }
 .site-brand-container {
-  background: rgba(255,255,255,0);
-  padding: 0 20px;
+  background: linear-gradient(120deg, rgba(254,172,94,0.4), rgba(199,121,208,0.4), rgba(75,192,200,0.4));
+  border-radius: 20px;
 }
 :root {
   --body-bg-color: rgba(255,255,255,0);
-  --brand-color: rgba(199,121,208,0.5);
+  --brand-color: #c779d0;
 }
 canvas#canvas {
   margin-top: 30px;
