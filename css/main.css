@@ -2985,23 +2985,6 @@ canvas#canvas {
 .category-all-page .category-list {
   list-style: circle;
 }
-/*.posts-expand {
-  .post-eof {
-    display: block;
-  //  margin: $post-eof-margin-top auto $post-eof-margin-bottom;  
-    width: 0%; //分割线长度
-    height: 0px; // 分割线高度
-    background: $grey-light;
-    text-align: center;
-  }
-}*/
-/*.post {
-   margin-top: 50px;
-   margin-bottom: 50px;
-   padding: 25px;
-   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
-   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
-}*/
 body {
   background: url("/images/background.jpg");
   background-repeat: no-repeat;
@@ -3021,3 +3004,25 @@ body {
 .popup {
   opacity: 0.9;
 }
+.post-button .btn {
+  border-radius: 50px;
+  padding: 5px 15px;
+  font-size: 15px;
+}
+/*.posts-expand {
+  .post-eof {
+    display: block;
+  //  margin: $post-eof-margin-top auto $post-eof-margin-bottom;  
+    width: 0%; //分割线长度
+    height: 0px; // 分割线高度
+    background: $grey-light;
+    text-align: center;
+  }
+}*/
+/*.post {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   padding: 25px;
+   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+}*/
