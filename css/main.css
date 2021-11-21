@@ -2962,6 +2962,11 @@ mark.search-keyword {
   background: linear-gradient(120deg, rgba(254,172,94,0.4), rgba(199,121,208,0.4), rgba(75,192,200,0.4));
   border-radius: 20px 20px 0px 0px;
 }
+.site-subtitle {
+  color: #fffacd;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
 :root {
   --body-bg-color: rgba(255,255,255,0);
   --brand-color: #c779d0;
