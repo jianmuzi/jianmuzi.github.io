@@ -58,6 +58,7 @@
   <div class="headband"></div>
 
   <main class="main">
+    
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
@@ -126,6 +127,109 @@
   </div>
 
 </div>
+
+    <!--jianmuzi，自定义日历2--><div class="box">
+	<div class="top">
+		<button type="button" onclick="prev()">上个月</button>
+		<div id="month"></div>
+		<button type="button" onclick="next()">下个月</button>
+	</div>
+	<div class="week">
+		<div class="evrday">日</div>
+		<div class="evrday">一</div>
+		<div class="evrday">二</div>
+		<div class="evrday">三</div>
+		<div class="evrday">四</div>
+		<div class="evrday">五</div>
+		<div class="evrday">六</div>
+	</div>
+	<div id="day"></div>
+</div>
+
+<script type="text/javascript">
+	var tody=new Date();//获取当前时间
+	var year=tody.getFullYear();//获取当前年份
+	var month=tody.getMonth()+1;//获取当前月份
+	var day=tody.getDate();//获取当前日
+	var allday=0;
+			
+	function showmonth(){
+		if(month<10){		//给小于10的数字前面加0
+			var year_month=year+" 年 "+"0"+month+" 月 ";
+		}else{
+			var year_month=year+" 年 "+month+" 月 ";
+		}
+		document.getElementById("month").innerHTML=year_month;//当前年月赋到页面
+	}
+			
+	function count(){
+		if(month!=2){
+			if(month==4||month==6||month==9||month==11)//判断月是30天还是31天,2月除外
+				allday=30;
+			else
+				allday=31;
+		}else{
+			if((year%4==0&&year%100!=0)||(year%400==0))//判断是否是闰年，进行相应的改变
+			allday=29;
+			else
+			allday=28;
+		}
+	}
+	//显示相应月份的天数
+	function showday(){
+		showmonth()
+		count();
+	  var fistdate=new Date(year,month-1,1);
+	  var xinqi=fistdate.getDay();
+	  var daterow=document.getElementById("day");
+				
+	  for(var i=0;i<xinqi;i++)//循环输出天数
+	  {
+		  var dayElement=document.createElement("div");
+			dayElement.className="evrday";
+			daterow.appendChild(dayElement);
+	  }
+			  
+	 for(var j=1;j<=allday;j++)
+	  {	
+		 var dayElement=document.createElement("div");
+		if(j<10){		//给小于10的数字前面加0
+				dayElement.innerHTML="0"+j;
+			}else{
+				dayElement.innerHTML=j;
+			}
+					
+			dayElement.className="evrday";
+			if(j==day)//当前日，标红
+			dayElement.style.color="red";
+			daterow.appendChild(dayElement);
+	  }
+	}
+	showday();
+			
+	//下个月
+	function next(){
+		document.getElementById("day").innerHTML="";//先清空day里面的内容
+		if(month<12){
+			month=month+1;
+		}else{
+			month=1;
+			year=year+1;
+		}
+		showday();//再把下个月的月份放到day里
+	}
+	//上个月
+	function prev(){
+		document.getElementById("day").innerHTML="";
+		if(month>1){
+			month=month-1;
+		}else{
+			month=12;
+			year=year-1;
+		}
+		showday();
+	}
+</script>
         
   
   <div class="toggle sidebar-toggle" role="button">
@@ -519,6 +623,143 @@ color="#BEBEBE"
 
     <div class="main-inner archive posts-collapse">
 
+     <!--jianmuzi，自定义日历1-->
+     <!--
+  <div class="wrapper">
+    <div class="year-line">
+      <button id="preMonth" class="year-prev">上一月</button>
+      <button id="nowYear" class="year-now"></button>
+      <button id="nowMonth"></button>
+      <button id="nowDate"></button>
+      <button id="nextMonth" class="year-next">下一月</button>
+    </div>
+    <div id="weekLine" class="week-line"></div>
+    <div id="dateWrap" class="date-wrap"></div>
+  </div>
+
+<script>
+  // 工具方法 - start
+  // 1.为了得到每月的日期有多少，咱们须要判断 平年闰年[四年一闰，百年不闰，四百年再闰]
+  const isLeapYear = (year) => {
+    return (year % 400 === 0) || (year % 100 !== 0 && year % 4 === 0);
+  };
+  // 2.得到每月的日期有多少，注意 month - [0-11]
+  const getMonthCount = (year, month) => {
+    let arr = [
+      31, null, 31, 30, 
+      31, 30, 31, 31,
+      30, 31, 30, 31
+    ];
+    let count = arr[month] || (isLeapYear(year) ? 29 : 28);
+    return Array.from(new Array(count), (item, value) => value + 1);
+  };
+  // 3.得到某年某月的 1号 是星期几，这里要注意的是 JS 的 API-getDay() 是从 [日-六](0-6)，返回 number
+  const getWeekday = (year, month) => {
+    let date = new Date(year, month, 1);
+    return date.getDay();
+  };
+  // 4.得到上个月的天数
+  const getPreMonthCount = (year, month) => {
+    if (month === 0) {
+      return getMonthCount(year - 1, 11);
+    } else {
+      return getMonthCount(year, month - 1);
+    }
+  };
+  // 5.得到下个月的天数
+  const getNextMonthCount = (year, month) => {
+    if (month === 11) {
+      return getMonthCount(year + 1, 0);
+    } else {
+      return getMonthCount(year, month + 1);
+    }
+  };
+  // 工具方法 - end
+  let weekStr = '日一二三四五六';
+  weekArr = weekStr.split('').map(item => '星期' + item);
+  // 插入星期 dom
+  let weekDomStr = '';
+  let oFragWeek = document.createDocumentFragment();
+  weekArr.forEach(item => {
+    let oSpan = document.createElement('span');
+    let oText = document.createTextNode(item);
+    oSpan.appendChild(oText);
+    oSpan.classList.add('week-item');
+    oFragWeek.appendChild(oSpan);
+  });
+  let weekWrap = document.getElementById('weekLine');
+  weekWrap.appendChild(oFragWeek);
+
+  // 这里得到咱们第一次的 数据 数组
+  const updateCalendar = (year, month, day) => {
+    if (typeof year === 'undefined' && typeof month === 'undefined' && typeof day === 'undefined') {
+      let nowDate = new Date();
+      year = nowDate.getFullYear();
+      month = nowDate.getMonth();
+      day = nowDate.getDate();
+    }
+    // 更新一下顶部的年月显示
+    document.getElementById('nowYear').innerHTML = year;
+    document.getElementById('nowMonth').innerHTML = month + 1;
+    document.getElementById('nowDate').innerHTML = day;
+    // 生成日历数据，上个月的 x 天 + 当月的 [28,29,30,31]天 + 下个月的 y 天 = 42
+    let res = [];
+    let currentMonth = getMonthCount(year, month);
+    let preMonth = getPreMonthCount(year, month);
+    let nextMonth = getNextMonthCount(year, month);
+    let whereMonday = getWeekday(year, month);
+    let preArr = preMonth.slice(-1 * whereMonday);
+    let nextArr = nextMonth.slice(0, 42 - currentMonth.length - whereMonday);
+    res = [].concat(preArr, currentMonth, nextArr);
+    // 上面通过我本人的测试是没有什么问题，接下来就是更新 dom 的信息的问题
+    let hadDom = document.getElementsByClassName('date-item');
+    if (hadDom && hadDom.length) {
+      let domArr = document.getElementsByClassName('date-item');
+      for (let i = 0; i < domArr.length; i++) {
+        domArr[i].innerHTML = res.shift();
+      }
+    } else {
+      // 若是以前没有结构的话
+      let str = '';
+      for (let i = 0; i < 6; i++) {
+        str += '<div class="date-line">';
+        for (let j = 0; j < 7; j++) {
+          str += `<span class='date-item'>${res.shift()}</span>`;
+          if (j === 6) {
+            str += '</div>';
+          }
+        }
+      }
+      document.getElementById('dateWrap').innerHTML = str;
+    }
+  };
+
+  updateCalendar();
+  // 添加上一月，下一月事件
+  let oPreButton = document.getElementById('preMonth');
+  let oNextButton = document.getElementById('nextMonth');
+  oPreButton.addEventListener('click', function () {
+    let currentYear = +document.getElementById('nowYear').textContent;
+    let currentMonth = +document.getElementById('nowMonth').textContent - 1;
+    let currentDate = +document.getElementById('nowDate').textContent;
+    if (currentMonth === 0) {
+      updateCalendar(currentYear - 1, 11, currentDate);
+    } else {
+      updateCalendar(currentYear, currentMonth - 1, currentDate);
+    }
+  });
+  oNextButton.addEventListener('click', function () {
+    let currentYear = +document.getElementById('nowYear').textContent;
+    let currentMonth = +document.getElementById('nowMonth').textContent - 1;
+    let currentDate = +document.getElementById('nowDate').textContent;
+    if (currentMonth === 11) {
+      updateCalendar(currentYear + 1, 0, currentDate);
+    } else {
+      updateCalendar(currentYear, currentMonth + 1, currentDate);
+    }
+  });
+</script>-->
+
 
   
   
@@ -605,6 +846,7 @@ color="#BEBEBE"
   </nav>
 
 </div>
+
   </main>
 
   <footer class="footer">
