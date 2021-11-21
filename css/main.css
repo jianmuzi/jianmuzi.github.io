@@ -2961,7 +2961,7 @@ mark.search-keyword {
 .site-brand-container {
   background: linear-gradient(120deg, rgba(254,172,94,0.4), rgba(199,121,208,0.4), rgba(75,192,200,0.4));
   border-radius: 20px 20px 0px 0px;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 0px 0px;
 }
 .site-subtitle {
   color: #fffacd;
