@@ -3007,9 +3007,11 @@ body {
 }
 .header {
   background: rgba(255,255,255,0);
+  border-radius: 20px;
 }
 .header-inner {
   background: rgba(255,255,255,0.9);
+  border-radius: 20px;
 }
 .popup {
   opacity: 0.9;
