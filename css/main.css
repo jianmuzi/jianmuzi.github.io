@@ -3005,6 +3005,9 @@ body {
   opacity: 0.9;
   margin-top: 55px;
 }
+.header {
+  background: rgba(255,255,255,0);
+}
 .header-inner {
   background: rgba(255,255,255,0.9);
 }
@@ -3066,6 +3069,11 @@ body {
   color: #000;
   padding: 15px 10px 15px 10px;
   border-radius: 20px;
+}
+@media (max-width: 991px) {
+  .box {
+    display: none;
+  }
 }
 .top {
   font-size: 0px;
