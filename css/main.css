@@ -3016,6 +3016,11 @@ body {
 .popup {
   opacity: 0.9;
 }
+@media (max-width: 767px) {
+  .post-block {
+    margin-top: 10px;
+  }
+}
 .post-button .btn {
   border-radius: 50px;
   padding: 5px 15px;
