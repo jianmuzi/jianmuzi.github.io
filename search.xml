@@ -196,6 +196,26 @@
       </tags>
   </entry>
   <entry>
+    <title>测试-abbrlink</title>
+    <url>/posts/2021-11-08/test-abbrlink/</url>
+    <content><![CDATA[<!--前言-->
+
+
+<p>~test_abbrlink</p>
+<span id="more"></span>
+
+
+
+<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>abbrlink</tag>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>test</title>
     <url>//archives/01/</url>
     <content><![CDATA[<!--前言-->  
@@ -237,28 +257,8 @@ $ hexo deploy</code></pre>
         <category>test</category>
       </categories>
       <tags>
+        <tag>test</tag>
         <tag>permalink</tag>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试-abbrlink</title>
-    <url>/posts/2021-11-08/test-abbrlink/</url>
-    <content><![CDATA[<!--前言-->
-
-
-<p>~test_abbrlink</p>
-<span id="more"></span>
-
-
-
-<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
-      <categories>
-        <category>test</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-        <tag>abbrlink</tag>
       </tags>
   </entry>
 </search>

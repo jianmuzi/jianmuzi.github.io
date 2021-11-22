@@ -3016,7 +3016,7 @@ body {
 .popup {
   opacity: 0.9;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .post-block {
     margin-top: 10px;
   }
