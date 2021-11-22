@@ -3019,6 +3019,7 @@ body {
 @media (max-width: 991px) {
   .post-block {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 .post-button .btn {
