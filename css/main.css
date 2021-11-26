@@ -3017,7 +3017,7 @@ body {
 .popup {
   opacity: 0.9;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .man-inner > .post-block {
     margin: 10px 0 10px 0;
     display: block;
