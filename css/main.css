@@ -2963,6 +2963,11 @@ mark.search-keyword {
   border-radius: 20px 20px 0px 0px;
   padding: 10px 0px 0px 0px;
 }
+@media (max-width: 767px) {
+  .site-brand-container {
+    border-radius: 20px 20px 20px 20px;
+  }
+}
 .site-subtitle {
   color: #fffacd;
   font-size: 14px;
@@ -3008,11 +3013,6 @@ body {
 }
 .header-inner {
   background: rgba(255,255,255,0.9);
-}
-@media (max-width: 767px) {
-  .header-inner {
-    border-radius: 20px 20px 20px 20px;
-  }
 }
 .popup {
   opacity: 0.9;
