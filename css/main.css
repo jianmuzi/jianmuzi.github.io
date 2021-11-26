@@ -2975,6 +2975,7 @@ mark.search-keyword {
 canvas#canvas {
   margin-top: 25px;
   margin-bottom: 0px;
+  height: 20px;
 }
 .tag-cloud {
   text-align: center;
@@ -3044,6 +3045,29 @@ body {
    -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
    -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
 }*/
+.pagination .prev,
+.pagination .page-number,
+.pagination .next {
+  border-bottom-style: none;
+  border-top-style: none;
+  border-radius: 10px;
+  background: #fff;
+  color: #696969;
+}
+/*
+.pagination .prev:hover {
+    color: white;
+    background: gray;
+}*/
+.pagination .page-number:hover {
+  color: #fff;
+  background: #808080;
+}
+/*
+.pagination .next:hover {
+    color: white;
+    background: gray;
+}*/
 /*
   .week-item {
     display: inline-block;
@@ -3071,12 +3095,14 @@ body {
   font-size: 12px;
   text-align: center;
   width: 215px;
-  height: 250px;
+  height: 295px;
   border: 1px #ccc solid;
-  transform: translateX(0.5%) translateY(10%);
+  transform: translateX(0.5%) translateY(8%);
   color: #000;
   padding: 15px 10px 15px 10px;
   border-radius: 20px;
+  background: #fff;
+  opacity: 0.9;
 }
 @media (max-width: 991px) {
   .box {
