@@ -3022,7 +3022,7 @@ body {
 .popup {
   opacity: 0.9;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .main-inner > .post-block {
     margin: 10px 0 10px 0;
     border-radius: 0;
