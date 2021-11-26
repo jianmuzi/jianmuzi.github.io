@@ -2958,6 +2958,13 @@ mark.search-keyword {
 .main-inner {
   margin-top: 10px;
 }
+@media (max-width: 767px) {
+  .main-inner {
+    border-radius: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 .site-brand-container {
   background: linear-gradient(120deg, rgba(254,172,94,0.4), rgba(199,121,208,0.4), rgba(75,192,200,0.4));
   border-radius: 20px 20px 0px 0px;
@@ -3017,12 +3024,12 @@ body {
 .popup {
   opacity: 0.9;
 }
-@media (max-width: 767px) {
-  .man-inner > .post-block {
-    margin: 10px 0 10px 0;
-    display: block;
-  }
-}
+/*.post-block {
+ +tablet-mobile() {
+     margin: 10px 0 10px 0;
+     display: block;
+    }
+}*/
 .post-button .btn {
   border-radius: 50px;
   padding: 5px 15px;
