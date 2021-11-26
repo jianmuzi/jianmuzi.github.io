@@ -2955,18 +2955,8 @@ mark.search-keyword {
 .header-inner {
   margin-top: 10px;
 }
-@media (max-width: 767px) {
-  .header-inner {
-    border-radius: 10px 10px 0 0;
-  }
-}
 .main-inner {
   margin-top: 10px;
-}
-@media (max-width: 991px) {
-  .main-inner {
-    border-radius: 0 0 0 0;
-  }
 }
 .site-brand-container {
   background: linear-gradient(120deg, rgba(254,172,94,0.4), rgba(199,121,208,0.4), rgba(75,192,200,0.4));
@@ -3021,17 +3011,11 @@ body {
 }
 @media (max-width: 767px) {
   .header-inner {
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
   }
 }
 .popup {
   opacity: 0.9;
-}
-@media (max-width: 991px) {
-  .main-inner .post-block {
-    margin: 10px 0 10px 0;
-    display: block;
-  }
 }
 .post-button .btn {
   border-radius: 50px;
