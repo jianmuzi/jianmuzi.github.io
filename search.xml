@@ -196,32 +196,6 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>//archives/01/</url>
-    <content><![CDATA[<!--前言-->  
-<p>测试本页代码下载<br>设置永久链接permalink: archives/01，其中01不能带后缀</p>
-<p>测试代码高亮</p>
-<pre><code class="highlight bash">$ hexo new <span class="string">&quot;My New Post&quot;</span>
-
-$ hexo server
-
-$ hexo generate
-
-$ hexo deploy</code></pre>
-
-<span id="more"></span>
-
-
-<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
-      <categories>
-        <category>1</category>
-      </categories>
-      <tags>
-        <tag>name01</tag>
-        <tag>name02</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>测试-abbrlink</title>
     <url>/posts/2021-11-08/test-abbrlink/</url>
     <content><![CDATA[<!--前言-->
@@ -259,6 +233,32 @@ $ hexo deploy</code></pre>
       <tags>
         <tag>test</tag>
         <tag>permalink</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>//archives/01/</url>
+    <content><![CDATA[<!--前言-->  
+<p>测试本页代码下载<br>设置永久链接permalink: archives/01，其中01不能带后缀</p>
+<p>测试代码高亮</p>
+<pre><code class="highlight bash">$ hexo new <span class="string">&quot;My New Post&quot;</span>
+
+$ hexo server
+
+$ hexo generate
+
+$ hexo deploy</code></pre>
+
+<span id="more"></span>
+
+
+<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
+      <categories>
+        <category>1</category>
+      </categories>
+      <tags>
+        <tag>name01</tag>
+        <tag>name02</tag>
       </tags>
   </entry>
 </search>

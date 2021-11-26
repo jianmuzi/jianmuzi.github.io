@@ -2958,7 +2958,7 @@ mark.search-keyword {
 .main-inner {
   margin-top: 10px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .main-inner {
     border-radius: 0;
     margin-top: 10px;
