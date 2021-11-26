@@ -2968,6 +2968,11 @@ mark.search-keyword {
     border-radius: 20px 20px 20px 20px;
   }
 }
+@media (max-width: 991px) {
+  .main-inner .post-block {
+    margin: 10px 0 10px 0;
+  }
+}
 .site-subtitle {
   color: #fffacd;
   font-size: 14px;
@@ -3014,6 +3019,11 @@ body {
 .header-inner {
   background: rgba(255,255,255,0.9);
 }
+@media (max-width: 767px) {
+  .header-inner {
+    border-radius: 20px 20px 20px 20px;
+  }
+}
 .popup {
   opacity: 0.9;
 }
@@ -3022,23 +3032,6 @@ body {
   padding: 5px 15px;
   font-size: 15px;
 }
-/*.posts-expand {
-  .post-eof {
-    display: block;
-  //  margin: $post-eof-margin-top auto $post-eof-margin-bottom;  
-    width: 0%; //分割线长度
-    height: 0px; // 分割线高度
-    background: $grey-light;
-    text-align: center;
-  }
-}*/
-/*.post {
-   margin-top: 50px;
-   margin-bottom: 50px;
-   padding: 25px;
-   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
-   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
-}*/
 .pagination .prev,
 .pagination .page-number,
 .pagination .next {
