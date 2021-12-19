@@ -4,47 +4,47 @@
     <title>计算机的概述</title>
     <url>/posts/2021-12-19/Computer-Overviews/</url>
     <content><![CDATA[<p>计算机是由<strong>硬件系统</strong>（hardware system）和<strong>软件系统</strong>（software system）两部分组成的。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/a9d3fd1f4134970a8637db6e94cad1c8a7865d2f?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="计算机"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/a9d3fd1f4134970a8637db6e94cad1c8a7865d2f.jpg" alt="计算机"> </p>
 <h3 id="硬件系统"><a href="#硬件系统" class="headerlink" title="硬件系统"></a>硬件系统</h3><ul>
 <li><strong>电源</strong></li>
 </ul>
 <p>电源是电脑中不可缺少的供电设备，它的作用是将220V交流电转换为电脑中使用的5V、12V、3.3V直流电，其性能的好坏，直接影响到电脑其他设备工作的稳定性，进而会影响整机的稳定性。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/8b13632762d0f703ad83477202fa513d2697c56f?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="电脑电源"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/8b13632762d0f703ad83477202fa513d2697c56f.jpg" alt="电脑电源"> </p>
 <ul>
 <li><strong>主板</strong></li>
 </ul>
 <p>主板是电脑中各个部件工作的一个平台，它把电脑的各个部件__紧密连接__在一起，各个部件通过主板进行数据传输。也就是说，电脑中重要的“交通枢纽”都在主板上，它工作的稳定性影响着整机工作的稳定性。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/11385343fbf2b211d32cacdcc28065380cd78e25?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="主板结构"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/11385343fbf2b211d32cacdcc28065380cd78e25.jpg" alt="主板结构"> </p>
 <ul>
 <li><strong>CPU</strong></li>
 </ul>
 <p>CPU即<a href="https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8">中央处理器</a>，是一台计算机的运算核心和控制核心。其功能主要是解释计算机指令以及处理计算机软件中的数据。CPU由运算器、控制器、寄存器、高速缓存及实现它们之间联系的数据、控制及状态的总线构成。作为整个系统的核心，CPU也是整个系统最高的执行单元，因此CPU已成为决定电脑性能的核心部件，很多用户都以它为标准来判断电脑的档次。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/3812b31bb051f81958f01c4ad9b44aed2f73e7dd?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="中央处理器"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/3812b31bb051f81958f01c4ad9b44aed2f73e7dd.jpg" alt="中央处理器"> </p>
 <ul>
 <li><strong>内存</strong></li>
 </ul>
 <p>内存又叫__内部存储器__或者是_随机存储器（RAM）_。内存属于电子式存储设备，它由电路板和芯片组成，特点是体积小，速度快，有电可存，无电清空，即电脑在开机状态时内存中可存储数据，关机后将自动清空其中的所有数据。 内存有DDR、DDR2、DDR3、DDR4三大类，容量1-256GB。（注：__DDR__，Double Data Rate 双倍速率同步动态随机存储器 , 就是内存条）</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/0df431adcbef76096414e9bc2edda3cc7cd99ef1?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="内存"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/0df431adcbef76096414e9bc2edda3cc7cd99ef1.jpg" alt="内存">  </p>
 <ul>
 <li><strong>硬盘</strong></li>
 </ul>
 <p>硬盘属于__外部存储器__，机械硬盘由金属磁片或玻璃磁片制成，而磁片有记忆功能，所以储到磁片上的数据，不论在开机，还是关机，都不会丢失。硬盘容量很大，已达TB级，尺寸有3.5、2.5、1.8、1.0英寸等，接口有IDE、SATA、SCSI等，SATA最普遍。固态硬盘是用固态电子存储芯片阵列而制成的硬盘，由控制单元和存储单元（FLASH芯片）组成。固态硬盘在产品外形和尺寸上也完全与普通硬盘一致但是固态硬盘比机械硬盘速度更快。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/8cb1cb1349540923dc75c4d29c58d109b3de4979?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="机械硬盘"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/8cb1cb1349540923dc75c4d29c58d109b3de4979.jpg" alt="机械硬盘"></p>
 <ul>
 <li><strong>声卡</strong></li>
 </ul>
 <p>声卡是组成电脑多媒体必不可少的一个硬件设备，其作用是当发出播放命令后，声卡将电脑中的声音数字信号转换成模拟信号送到音箱上发出声音。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/cb8065380cd79123ae7390e2ad345982b3b78090?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="声卡"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/cb8065380cd79123ae7390e2ad345982b3b78090.jpg" alt="声卡"></p>
 <ul>
 <li><strong>显卡</strong></li>
 </ul>
 <p>显卡在工作时与显示器配合输出图形、文字，其作用是将计算机系统所需要的显示信息进行转换驱动，并向显示器提供行扫描信号，控制显示器的正确显示，是连接显示器和个人电脑主板的重要元件，是“人机对话”的重要设备之一。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/267f9e2f0708283876b3457ebc99a9014c08f11a?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="显卡"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/267f9e2f0708283876b3457ebc99a9014c08f11a.jpg" alt="显卡"> </p>
 <ul>
 <li><strong>网卡</strong></li>
 </ul>
 <p>网卡是工作在数据链路层的网路组件，是局域网中连接计算机和传输介质的接口，不仅能实现与局域网传输介质之间的物理连接和电信号匹配，还涉及帧的发送与接收、帧的封装与拆封、介质访问控制、数据的编码与解码以及数据缓存的功能等。网卡的作用是充当电脑与网线之间的桥梁，它是用来建立局域网并连接到互联网<strong>Internet</strong>的重要设备之一。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/b812c8fcc3cec3fda0edf902d288d43f869427f1?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="网卡"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/b812c8fcc3cec3fda0edf902d288d43f869427f1.jpg" alt="网卡"> </p>
 <blockquote>
 <p>注：在整合型主板中常把声卡、显卡、网卡部分或全部集成在主板上。</p>
 </blockquote>
@@ -52,52 +52,53 @@
 <li><strong>光驱</strong></li>
 </ul>
 <p>英文名为“Optical Disk  driver”，电脑用来读写光碟内容的机器，也是在台式机和笔记本便携式电脑里比较常见的一个部件。随着多媒体的应用越来越广泛，使得光驱在计算机诸多配件中已经成为标准配置。光驱可分为CD-ROM驱动器、DVD光驱（DVD-ROM）、康宝（COMBO）和DVD刻录机（DVD-RAM）等。读写的能力和速度也日益提升，4× 16× 32× 40× 48×。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/d4628535e5dde711cdcc5a69a7efce1b9d166116?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="光驱"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/d4628535e5dde711cdcc5a69a7efce1b9d166116.jpg" alt="光驱"> </p>
 <ul>
 <li><strong>调制解调器</strong></li>
 </ul>
 <p>英文名为“Modem”，俗称“猫”，即调制解调器，类型有内置式和外置式，有线式和无线式。<strong>调制解调器</strong>是通过电话线上网时必不可少的设备之一。它的作用是将电脑上处理的数字信号转换成电话线传输的模拟信号。<strong>随着ADSL宽带网的普及</strong>，内置式调制解调器逐渐退出了市场。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/c2cec3fdfc0392458ed6a0bd8694a4c27d1e2524?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="调制解调器"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/c2cec3fdfc0392458ed6a0bd8694a4c27d1e2524.jpg" alt="调制解调器"> </p>
 <ul>
 <li><strong>显示器</strong></li>
 </ul>
 <p>英文名为“monitor”，显示器有大有小，有薄有厚，品种多样，其作用是把电脑处理完的结果显示出来。它是一个输出设备，是电脑必不可缺少的部件之一。分为CRT、LCD、LED三大类，接口有VGA、DVI、VGA DVI、HDMI DP、type-C、S-video、AV接口。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/1ad5ad6eddc451da81cb9aa1aab44566d0160924946a?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="显示器"></p>
+<img src="https://www.lg.com/cn/images/plp-b2c/b2c-2/b2c-cn-monitors-categoryselector-5.jpg" alt="显示器">
+
 <ul>
 <li><strong>键盘</strong></li>
 </ul>
 <p>英文名为“Keyboard”，分为有线和无线，键盘是主要的人工学输入设备，通常为104或105键，用于把文字、数字等输到电脑上，以及电脑操控。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/a9d3fd1f4134970a08bd589e95cad1c8a6865db0?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="常见计算机键盘"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/a9d3fd1f4134970a08bd589e95cad1c8a6865db0.jpg" alt="常见计算机键盘"> </p>
 <ul>
 <li><strong>鼠标</strong></li>
 </ul>
 <p>英文名为“Mouse”，当人们移动鼠标时，电脑屏幕上就会有一个箭头指针跟着移动，并可以很准确指到想指的位置，快速地在屏幕上定位，它是人们使用电脑不可缺少的部件之一。 键盘鼠标接口有PS/2和USB两种。硬件的鼠标分为光电和机械两种（机械已被光电淘汰）。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/562c11dfa9ec8a13e68ffe39fe03918fa1ecc056?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="鼠标"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/562c11dfa9ec8a13e68ffe39fe03918fa1ecc056.jpg" alt="鼠标"></p>
 <ul>
 <li><strong>音箱</strong> </li>
 </ul>
 <p>英文名为“Loud speaker”,通过音频线连接到功率放大器，再通过晶体管把声音放大，输出到喇叭上，从而使喇叭发出电脑的声音。一般的电脑音箱可分为2、2.1 、3 .1、4、4.1、5.1、7.1这几种，音质也各有差异。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/8718367adab44aede83ac3aeb21c8701a18bfb00?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="音响"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/8718367adab44aede83ac3aeb21c8701a18bfb00.jpg" alt="音响"></p>
 <ul>
 <li><strong>打印机</strong></li>
 </ul>
 <p>英文名为“Printer”,通过它可以把电脑中的文件打印到纸上，它是重要的输出设备之一。在打印机领域形成了针式打印机、喷墨打印机、激光打印机三足鼎立的主流产品，各自发挥其优点，满足各界用户不同的需求。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/a8773912b31bb05126a9aab7367adab44bede0a4?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="打印机"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/a8773912b31bb05126a9aab7367adab44bede0a4.jpg" alt="打印机"></p>
 <ul>
 <li><strong>视频设备</strong></li>
 </ul>
 <p>如摄像头、扫描仪、数码相机、<a href="https://baike.baidu.com/item/%E6%95%B0%E7%A0%81%E6%91%84%E5%83%8F%E6%9C%BA/10935797">数码摄像机</a>、电视卡等设备，用于处理视频信号。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/4a36acaf2edda3cca4481ae708e93901203f924d?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="视频设备"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/4a36acaf2edda3cca4481ae708e93901203f924d.jpg" alt="视频设备"> </p>
 <ul>
 <li><strong>闪存盘</strong></li>
 </ul>
 <p>英文名为“Flash  disk”，闪存盘通常也被称作优盘，U盘，闪盘，是一个通用串行总线USB接口的无需物理驱动器的微型高容量移动存储产品，它采用的存储介质为闪存存储介质（Flash Memory）。闪存盘一般包括闪存（Flash  Memory）、控制芯片和外壳。闪存盘具有可多次擦写、速度快而且防磁、防震、防潮的优点。闪盘采用流行的USB接口，体积只有大拇指大小，重量约20克，不用驱动器，无需外接电源，即插即用，不同电脑之间进行文件交流，存储容量从1～128GB不等，满足不同的需求。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/aa18972bd40735fa814d00cf9e510fb30f240802?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="U盘"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/aa18972bd40735fa814d00cf9e510fb30f240802.jpg" alt="U盘"></p>
 <ul>
 <li><strong>移动存储卡及读卡器</strong></li>
 </ul>
 <p>存储卡是利用闪存（Flash  Memory）技术达到存储电子信息的存储器，一般应用在数码相机、掌上电脑、MP3、MP4等小型数码产品中作为存储介质，所以样子小巧，犹如一张卡片，所以称之为闪存卡。根据不同的生产厂商和不同的应用，闪存卡有Smart Media（SM卡）、Compact Flash（CF卡），Multi Media Card（MMC卡），Secure  Digital（SD卡）、Memory  Stick（记忆棒），TF卡等多种类型，这些闪存卡虽然外观、规格不同，但是技术原理都是相同的。由于闪存卡本身并不能直接被电脑辨认，读卡器就是一个两者的沟通桥梁。读卡器（Card Reader）可使用很多种存储卡，如Compact Flash or Smart Media or  Microdrive存储卡等，作为存储卡的信息存取装置。读卡器使用USB1.1/USB2.0的传输介面，支持热拔插。与普通USB设备一样，只需插入电脑的USB端口，然后插用存储卡就可以使用了。 按照速度来划分有USB1.1、USB2.0以及USB3.0，按用途来划分，有单一读卡器和多合一读卡器。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/5882b2b7d0a20cf47682e1d676094b36acaf99ac?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="读卡器"></p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/5882b2b7d0a20cf47682e1d676094b36acaf99ac.jpg" alt="读卡器"></p>
 <h3 id="软件系统"><a href="#软件系统" class="headerlink" title="软件系统"></a>软件系统</h3><p>所谓软件是指为了使用计算机和提高其效率而组织的程序以及用于软件开发、计算机使用和维护的有关文档。软件系统可分为系统软件和应用软件两大类。</p>
 <h4 id="系统软件"><a href="#系统软件" class="headerlink" title="系统软件"></a>系统软件</h4><p>系统软件（System  software），由一组控制计算机系统并管理其资源的程序组成，其主要功能包括：启动计算机，存储、加载和执行应用程序，对文件进行排序、检索，将程序语言翻译成机器语言等。实际上，系统软件可以看作用户与计算机的接口，它为应用软件和用户提供了控制、访问硬件的手段，这些功能主要由操作系统完成。此外，编译系统和各种工具软件也属此类，它们从另一方面辅助用户使用计算机。下面分别介绍它们的功能。 </p>
 <p>1.<strong>操作系统（Operating System，简称OS）</strong></p>
@@ -156,12 +157,12 @@
       </tags>
   </entry>
   <entry>
-    <title>测试-abbrlink</title>
-    <url>/posts/2021-11-08/test-abbrlink/</url>
+    <title>测试-permalink</title>
+    <url>//archives/test/</url>
     <content><![CDATA[<!--前言-->
 
 
-<p>~test_abbrlink</p>
+<p>~test_permalink</p>
 <span id="more"></span>
 
 
@@ -171,7 +172,7 @@
         <category>test</category>
       </categories>
       <tags>
-        <tag>abbrlink</tag>
+        <tag>permalink</tag>
         <tag>test</tag>
       </tags>
   </entry>
@@ -348,6 +349,26 @@
       </tags>
   </entry>
   <entry>
+    <title>测试-abbrlink</title>
+    <url>/posts/2021-11-08/test-abbrlink/</url>
+    <content><![CDATA[<!--前言-->
+
+
+<p>~test_abbrlink</p>
+<span id="more"></span>
+
+
+
+<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+        <tag>abbrlink</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>test</title>
     <url>//archives/01/</url>
     <content><![CDATA[<!--前言-->  
@@ -371,26 +392,6 @@ $ hexo deploy</code></pre>
       <tags>
         <tag>name01</tag>
         <tag>name02</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试-permalink</title>
-    <url>//archives/test/</url>
-    <content><![CDATA[<!--前言-->
-
-
-<p>~test_permalink</p>
-<span id="more"></span>
-
-
-
-<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
-      <categories>
-        <category>test</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-        <tag>permalink</tag>
       </tags>
   </entry>
 </search>
