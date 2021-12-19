@@ -1,6 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>计算机的概述</title>
+    <url>/posts/2021-12-19/Computer-Overviews/</url>
+    <content><![CDATA[<p>计算机是由<strong>硬件系统</strong>（hardware system）和<strong>软件系统</strong>（software system）两部分组成的。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/a9d3fd1f4134970a8637db6e94cad1c8a7865d2f?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="计算机"></p>
+<h3 id="硬件系统"><a href="#硬件系统" class="headerlink" title="硬件系统"></a>硬件系统</h3><ul>
+<li><strong>电源</strong></li>
+</ul>
+<p>电源是电脑中不可缺少的供电设备，它的作用是将220V交流电转换为电脑中使用的5V、12V、3.3V直流电，其性能的好坏，直接影响到电脑其他设备工作的稳定性，进而会影响整机的稳定性。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/8b13632762d0f703ad83477202fa513d2697c56f?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="电脑电源"></p>
+<ul>
+<li><strong>主板</strong></li>
+</ul>
+<p>主板是电脑中各个部件工作的一个平台，它把电脑的各个部件__紧密连接__在一起，各个部件通过主板进行数据传输。也就是说，电脑中重要的“交通枢纽”都在主板上，它工作的稳定性影响着整机工作的稳定性。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/11385343fbf2b211d32cacdcc28065380cd78e25?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="主板结构"></p>
+<ul>
+<li><strong>CPU</strong></li>
+</ul>
+<p>CPU即<a href="https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8">中央处理器</a>，是一台计算机的运算核心和控制核心。其功能主要是解释计算机指令以及处理计算机软件中的数据。CPU由运算器、控制器、寄存器、高速缓存及实现它们之间联系的数据、控制及状态的总线构成。作为整个系统的核心，CPU也是整个系统最高的执行单元，因此CPU已成为决定电脑性能的核心部件，很多用户都以它为标准来判断电脑的档次。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/3812b31bb051f81958f01c4ad9b44aed2f73e7dd?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="中央处理器"></p>
+<ul>
+<li><strong>内存</strong></li>
+</ul>
+<p>内存又叫__内部存储器__或者是_随机存储器（RAM）_。内存属于电子式存储设备，它由电路板和芯片组成，特点是体积小，速度快，有电可存，无电清空，即电脑在开机状态时内存中可存储数据，关机后将自动清空其中的所有数据。 内存有DDR、DDR2、DDR3、DDR4三大类，容量1-256GB。（注：__DDR__，Double Data Rate 双倍速率同步动态随机存储器 , 就是内存条）</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/0df431adcbef76096414e9bc2edda3cc7cd99ef1?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="内存"></p>
+<ul>
+<li><strong>硬盘</strong></li>
+</ul>
+<p>硬盘属于__外部存储器__，机械硬盘由金属磁片或玻璃磁片制成，而磁片有记忆功能，所以储到磁片上的数据，不论在开机，还是关机，都不会丢失。硬盘容量很大，已达TB级，尺寸有3.5、2.5、1.8、1.0英寸等，接口有IDE、SATA、SCSI等，SATA最普遍。固态硬盘是用固态电子存储芯片阵列而制成的硬盘，由控制单元和存储单元（FLASH芯片）组成。固态硬盘在产品外形和尺寸上也完全与普通硬盘一致但是固态硬盘比机械硬盘速度更快。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/8cb1cb1349540923dc75c4d29c58d109b3de4979?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="机械硬盘"></p>
+<ul>
+<li><strong>声卡</strong></li>
+</ul>
+<p>声卡是组成电脑多媒体必不可少的一个硬件设备，其作用是当发出播放命令后，声卡将电脑中的声音数字信号转换成模拟信号送到音箱上发出声音。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/cb8065380cd79123ae7390e2ad345982b3b78090?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="声卡"></p>
+<ul>
+<li><strong>显卡</strong></li>
+</ul>
+<p>显卡在工作时与显示器配合输出图形、文字，其作用是将计算机系统所需要的显示信息进行转换驱动，并向显示器提供行扫描信号，控制显示器的正确显示，是连接显示器和个人电脑主板的重要元件，是“人机对话”的重要设备之一。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/267f9e2f0708283876b3457ebc99a9014c08f11a?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="显卡"></p>
+<ul>
+<li><strong>网卡</strong></li>
+</ul>
+<p>网卡是工作在数据链路层的网路组件，是局域网中连接计算机和传输介质的接口，不仅能实现与局域网传输介质之间的物理连接和电信号匹配，还涉及帧的发送与接收、帧的封装与拆封、介质访问控制、数据的编码与解码以及数据缓存的功能等。网卡的作用是充当电脑与网线之间的桥梁，它是用来建立局域网并连接到互联网<strong>Internet</strong>的重要设备之一。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/b812c8fcc3cec3fda0edf902d288d43f869427f1?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="网卡"></p>
+<blockquote>
+<p>注：在整合型主板中常把声卡、显卡、网卡部分或全部集成在主板上。</p>
+</blockquote>
+<ul>
+<li><strong>光驱</strong></li>
+</ul>
+<p>英文名为“Optical Disk  driver”，电脑用来读写光碟内容的机器，也是在台式机和笔记本便携式电脑里比较常见的一个部件。随着多媒体的应用越来越广泛，使得光驱在计算机诸多配件中已经成为标准配置。光驱可分为CD-ROM驱动器、DVD光驱（DVD-ROM）、康宝（COMBO）和DVD刻录机（DVD-RAM）等。读写的能力和速度也日益提升，4× 16× 32× 40× 48×。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/d4628535e5dde711cdcc5a69a7efce1b9d166116?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="光驱"></p>
+<ul>
+<li><strong>调制解调器</strong></li>
+</ul>
+<p>英文名为“Modem”，俗称“猫”，即调制解调器，类型有内置式和外置式，有线式和无线式。<strong>调制解调器</strong>是通过电话线上网时必不可少的设备之一。它的作用是将电脑上处理的数字信号转换成电话线传输的模拟信号。<strong>随着ADSL宽带网的普及</strong>，内置式调制解调器逐渐退出了市场。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/c2cec3fdfc0392458ed6a0bd8694a4c27d1e2524?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="调制解调器"></p>
+<ul>
+<li><strong>显示器</strong></li>
+</ul>
+<p>英文名为“monitor”，显示器有大有小，有薄有厚，品种多样，其作用是把电脑处理完的结果显示出来。它是一个输出设备，是电脑必不可缺少的部件之一。分为CRT、LCD、LED三大类，接口有VGA、DVI、VGA DVI、HDMI DP、type-C、S-video、AV接口。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/1ad5ad6eddc451da81cb9aa1aab44566d0160924946a?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="显示器"></p>
+<ul>
+<li><strong>键盘</strong></li>
+</ul>
+<p>英文名为“Keyboard”，分为有线和无线，键盘是主要的人工学输入设备，通常为104或105键，用于把文字、数字等输到电脑上，以及电脑操控。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/a9d3fd1f4134970a08bd589e95cad1c8a6865db0?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="常见计算机键盘"></p>
+<ul>
+<li><strong>鼠标</strong></li>
+</ul>
+<p>英文名为“Mouse”，当人们移动鼠标时，电脑屏幕上就会有一个箭头指针跟着移动，并可以很准确指到想指的位置，快速地在屏幕上定位，它是人们使用电脑不可缺少的部件之一。 键盘鼠标接口有PS/2和USB两种。硬件的鼠标分为光电和机械两种（机械已被光电淘汰）。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/562c11dfa9ec8a13e68ffe39fe03918fa1ecc056?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="鼠标"></p>
+<ul>
+<li><strong>音箱</strong> </li>
+</ul>
+<p>英文名为“Loud speaker”,通过音频线连接到功率放大器，再通过晶体管把声音放大，输出到喇叭上，从而使喇叭发出电脑的声音。一般的电脑音箱可分为2、2.1 、3 .1、4、4.1、5.1、7.1这几种，音质也各有差异。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/8718367adab44aede83ac3aeb21c8701a18bfb00?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="音响"></p>
+<ul>
+<li><strong>打印机</strong></li>
+</ul>
+<p>英文名为“Printer”,通过它可以把电脑中的文件打印到纸上，它是重要的输出设备之一。在打印机领域形成了针式打印机、喷墨打印机、激光打印机三足鼎立的主流产品，各自发挥其优点，满足各界用户不同的需求。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/a8773912b31bb05126a9aab7367adab44bede0a4?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="打印机"></p>
+<ul>
+<li><strong>视频设备</strong></li>
+</ul>
+<p>如摄像头、扫描仪、数码相机、<a href="https://baike.baidu.com/item/%E6%95%B0%E7%A0%81%E6%91%84%E5%83%8F%E6%9C%BA/10935797">数码摄像机</a>、电视卡等设备，用于处理视频信号。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/4a36acaf2edda3cca4481ae708e93901203f924d?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="视频设备"></p>
+<ul>
+<li><strong>闪存盘</strong></li>
+</ul>
+<p>英文名为“Flash  disk”，闪存盘通常也被称作优盘，U盘，闪盘，是一个通用串行总线USB接口的无需物理驱动器的微型高容量移动存储产品，它采用的存储介质为闪存存储介质（Flash Memory）。闪存盘一般包括闪存（Flash  Memory）、控制芯片和外壳。闪存盘具有可多次擦写、速度快而且防磁、防震、防潮的优点。闪盘采用流行的USB接口，体积只有大拇指大小，重量约20克，不用驱动器，无需外接电源，即插即用，不同电脑之间进行文件交流，存储容量从1～128GB不等，满足不同的需求。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/aa18972bd40735fa814d00cf9e510fb30f240802?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="U盘"></p>
+<ul>
+<li><strong>移动存储卡及读卡器</strong></li>
+</ul>
+<p>存储卡是利用闪存（Flash  Memory）技术达到存储电子信息的存储器，一般应用在数码相机、掌上电脑、MP3、MP4等小型数码产品中作为存储介质，所以样子小巧，犹如一张卡片，所以称之为闪存卡。根据不同的生产厂商和不同的应用，闪存卡有Smart Media（SM卡）、Compact Flash（CF卡），Multi Media Card（MMC卡），Secure  Digital（SD卡）、Memory  Stick（记忆棒），TF卡等多种类型，这些闪存卡虽然外观、规格不同，但是技术原理都是相同的。由于闪存卡本身并不能直接被电脑辨认，读卡器就是一个两者的沟通桥梁。读卡器（Card Reader）可使用很多种存储卡，如Compact Flash or Smart Media or  Microdrive存储卡等，作为存储卡的信息存取装置。读卡器使用USB1.1/USB2.0的传输介面，支持热拔插。与普通USB设备一样，只需插入电脑的USB端口，然后插用存储卡就可以使用了。 按照速度来划分有USB1.1、USB2.0以及USB3.0，按用途来划分，有单一读卡器和多合一读卡器。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/5882b2b7d0a20cf47682e1d676094b36acaf99ac?x-bce-process=image/resize,m_lfit,w_440,limit_1/format,f_auto" alt="读卡器"></p>
+<h3 id="软件系统"><a href="#软件系统" class="headerlink" title="软件系统"></a>软件系统</h3><p>所谓软件是指为了使用计算机和提高其效率而组织的程序以及用于软件开发、计算机使用和维护的有关文档。软件系统可分为系统软件和应用软件两大类。</p>
+<h4 id="系统软件"><a href="#系统软件" class="headerlink" title="系统软件"></a>系统软件</h4><p>系统软件（System  software），由一组控制计算机系统并管理其资源的程序组成，其主要功能包括：启动计算机，存储、加载和执行应用程序，对文件进行排序、检索，将程序语言翻译成机器语言等。实际上，系统软件可以看作用户与计算机的接口，它为应用软件和用户提供了控制、访问硬件的手段，这些功能主要由操作系统完成。此外，编译系统和各种工具软件也属此类，它们从另一方面辅助用户使用计算机。下面分别介绍它们的功能。 </p>
+<p>1.<strong>操作系统（Operating System，简称OS）</strong></p>
+<p>操作系统是管理、控制和监督计算机软、硬件资源协调运行的程序系统，由一系列具有不同控制和管理功能的程序组成，它是直接运行在计算机硬件上的、最基本的系统软件，是系统软件的核心。操作系统是计算机发展中的产物，是用户和计算机的接口，它的主要目的有两个：一是方便用户使用计算机，比如用户键入一条简单的命令就能自动完成复杂的功能，这就是操作系统帮助的结果；二是统一管理计算机系统的全部资源，合理组织计算机工作流程，以便充分、合理地发挥计算机的效率。操作系统通常应包括下列几大功能模块：</p>
+<ul>
+<li>进程管理模块</li>
+<li>内存管理模块</li>
+<li>文件系统管理模块</li>
+<li>I/O 设备管理模块<ul>
+<li>磁盘</li>
+<li>键盘、鼠标和监视器</li>
+</ul>
+</li>
+<li>网络管理模块</li>
+<li>安全管理模块</li>
+</ul>
+<p>2.<strong>语言处理系统</strong></p>
+<p>人和计算机交流信息使用的语言称为<strong>计算机语言</strong>或称程序设计语言。<strong>计算机语言</strong>通常分为机器语言、汇编语言和高级语言三类，但计算机只能直接识别和执行<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E8%AF%AD%E8%A8%80">机器语言</a>。对于机器语言，CPU执行每一条指令都只完成一个十分简单的操作，而一个系统软件或应用软件，要由成千上万甚至上亿条指令组合而成，直接用基本指令（也称机器语言）来编写软件，是一件极其繁重而艰难的工作。<strong>为了提高效率</strong>，人们规定一套新的指令，称为<strong>高级语言</strong>，其中每一条指令完成一项复杂操作。但CPU并不能直接执行这些新的指令，需要编写一个软件，专门用来将源程序中的每条指令翻译成一系列CPU能接受的基本指令使源程序转化成能在计算机上运行的程序。完成这种翻译的软件称为高级语言编译软件，也就是计算机语言处理系统，通常把它们归入系统软件。目前常用的高级语言有VB、C++、JAVA等，它们各有特点，分别适用于编写某一类型的程序，它们都有各自的编译软件。 </p>
+<p>3.<strong>辅助程序</strong></p>
+<p>系统辅助处理程序也称为“软件研制开发工具”、“支持软件”、“软件工具”，主要提供一些常用的辅助性功能，它们为用户开发程序和使用计算机提供了方便。像微机上使用的编辑程序、调试程序、装备和连接程序、调试程序均属于此类。</p>
+<p>4.<strong>数据库管理系统</strong></p>
+<p>数据库是指按照一定联系存储的数据集合，可为多种应用共享。数据库管理系统（Data Base Management System，DBMS）则是能够对数据库进行加工、管理的系统软件。其主要功能是建立、删除、维护数据库及对库中数据进行各种操作。数据库管理系统有组织地、动态地存贮大量数据，使人们能方便、高效地使用这些数据。</p>
+<h4 id="应用软件"><a href="#应用软件" class="headerlink" title="应用软件"></a>应用软件</h4><p>应用软件（Application）是和系统软件相对应的，是用户可以使用的各种<a href="https://baike.baidu.com/item/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/2317999">程序设计语言</a>，以及用各种程序设计语言编制的应用程序的集合，分为应用<a href="https://baike.baidu.com/item/%E8%BD%AF%E4%BB%B6%E5%8C%85">软件包</a>和<a href="https://baike.baidu.com/item/%E7%94%A8%E6%88%B7%E7%A8%8B%E5%BA%8F/7450916">用户程序</a>。应用<a href="https://baike.baidu.com/item/%E8%BD%AF%E4%BB%B6%E5%8C%85">软件包</a>是利用计算机解决某类问题而设计的程序的集合，多供用户使用。</p>
+<p>应用软件是为满足用户不同领域、不同问题的应用需求而提供的那部分软件。 它可以拓宽计算机系统的应用领域，放大硬件的功能。</p>
+<p><strong>注：</strong>本文非原创，参考链接：<a href="https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA/140338?fr=aladdin">https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA/140338?fr=aladdin</a></p>
+]]></content>
+      <categories>
+        <category>Basic-Concept</category>
+      </categories>
+      <tags>
+        <tag>OS</tag>
+        <tag>Computer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/2021-11-06/hello-world/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密码错误，请重新输入" data-whm="抱歉，文章不能被校验，但解密后内容还可以看">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b5c19131c9c93fdb74d1f53c9a692dd9ff10d6c404ce7d2429a832f3163abc67">cba72b6624cc4179c4a2196e9b75023fa2fe420773d965718bfe72ffda4b2fb2225db9528bdad5ba5e6014907d4f93fb33eb5ec9089d70daec7631ccf609f7267962a6306d340bedf9ca5716cb12a1a2dcbc424e5dce7e8a0bbd7ee880f52cb84d5eaa32e7b09cb452ed609b5e220a7ede8816aed5b618a531a2556b603e6d8bb245d2e702c191b0c8ac94d31427ea7a170b897160037f12790af582b2f5f2165f8229f75469920fd81dca90eeb09b67edfa8ccd6a34dd9fddbc9214f61e71672ec563e63cddd979f02c5d7bf227f5a0f298d97703c8f8a72165d5cdca6dd413161c4bd749c9f27fac10227e826687b926d171e221d655ba57a4104eba05484830a8a6b54d28fe9d1ac81b1b89399ae014b614821bc02878358475eb53d995397a7b5d34e3156df15c785e50bba37cf56c23cf6911f32fe6bae8a38660788e1d42b58a45e546644aee3476833085a14f7443b6f3c5eb8a37a880bf9bc25124716f6ae9924485b3b14767626ff5b51a4f4fe60c45598332cb48ba88f5222e44e6ac2e4f871a291205d429fa5d31fa302b7dad914b8934ed0bff1ed69bc8d07ddf216ff19644be3ab73a03925682f21a2fdd565494513bad000e0692d41d98c2009afbac1614967e18f7272a49075273bb7615bb3a21026d950fcb75ba788fdde30a31f730bc638a321b3f9fe72040bda3f00d51022532edfb6e758d27afb15bc93b22238b815831a22ecf4550bc949aa5aa55dab2f14d8d1d722533cae0e2ceae2cd45412e9c82cdc9f995bc819afeed962eeb51e47c41de98d6298088a6a2a71b591394df738dd0904c8657c4c275676d5368a6fac48286ddfe39081bf59d873cbfaf9b0568bd444cd24f0310933acd900cae82d975f69426875505a3673eb41804f9304b803dabc813b945b392d1ab80eee3c1cb33451f58a8433b75d4642af092fcc112827e4a875208cd64fc5a49282b56f769a8ae521d22bf41c0951a14f4d35254a6298a3586766470d0edb9d1ff5778166a2cd7237f21a0cbd354493a9b21d181099c75daaa209ebe5cc93a4f742990424a56bc8a84b276163d38d2a44feea1fcabb4a31de9847cdac340dcce798bd331836cbdadb2f95daea8606591a144b36d96f3d8935a9a8ad1adfc839289682a7c8f01b6d8dcd0fab48e0cb0edf79d865ccfd3ef482b966c66b29138004114b62fed58cf9c64a0d522791000dbd05ccf87e9b949229bfd07aed5290b3166cb063db421e2351c892c5729e89eb799d17ecfe29c2d6a88f980bf186a3184d37acc0acc083348ae38de2b77f179770f41c2870e6c5669de109af8cc47e7fec835a482164b58036b9c2a43277b1bb490df364f52923d48b15423a8ba53d165d6e6e01949a59eb3233cb38b02ea771a935843cfa43b6fde58a51944f35efd62fef3ff5f5a6f1bce805b0cde0eb1a3265f943d88c0b147b7b954a2080c2f83e45cec4cb7134d8fb3d1ab80a94b75ab08645d6664e32a66ab454e54f37c67fddfa247853c71cd4d348fb53c4529e40363287badc1bae85015d991e156a796520c87b8950850343b22fc3cd5d628455df660958c383976f13c2d440142582a702e38a763d0b7ccc3d0b8875c95a79232aac8ac0baa1309757defcd76766ca992294c7f98c84e068e2de6fba66497f3873c27b6a057617cc6890a2dd793a3819ff0830be2ecb8c222e37932ff935913f20ceaf61ed46b3514fa00b60e06128c804ae4ab2e3a62646dc10b780f8364b0e708de4ec9463397c0d7446f2cdcc124ada890bbc26c62f9264b49650ee13859608c9b993650376d42687c639a2f0119e902d990257bef4a9a4ef39597abb89589adc9ad4631aec643ad6ec224fa1ee8c13fd38d3d21301aa18367b7c0df640d9faf7fb8218dc0c42ebb05f87eebd540e3ee48e9ce88fd8766e53cb6f4a7ceaf82aa8441bd2e54980a2826382595b652ca22de8d927756bc28af79c39e83c6c68b05744dc693a0f8edd2026d0e219423e47be44622211892e4459e9cfbd32ec71ed316a29ea2741eed48142661fe954849eec612dda221e6336284f40361dcd92e94a271365a5253ad9781a2f1862a7cdeb16eace208aa5d1229c7c35da1cd7db56918a92420baa5137bc41562616472e40434dbf93fbe93d95764d7234f6c6133c3d586c2b2d180887c5744141f7c16a242d808924df3814506253e0e3f06a3c47913dd4637a72f024a7acbc17be2ec9a05e5a6c0de3aadeceb69165ccc45fd7408b18dc9fb8f95d67537c2fbd59525c4f56363888236f8abbecdf6efa3b741f7efbf8be43cf6c0df785e653b0483d3c2bb2578c5faaec878dfb4e3e1577ad11b631</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-shrink">
+      <input class="hbe hbe-input-field hbe-input-field-shrink" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-shrink" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-shrink">请输入密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>Start-Page</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>测试-abbrlink</title>
     <url>/posts/2021-11-08/test-abbrlink/</url>
     <content><![CDATA[<!--前言-->
@@ -190,29 +345,6 @@
       <tags>
         <tag>Linux</tag>
         <tag>Extend_MountPoint</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/posts/2021-11-06/hello-world/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密码错误，请重新输入" data-whm="抱歉，文章不能被校验，但解密后内容还可以看">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b5c19131c9c93fdb74d1f53c9a692dd9ff10d6c404ce7d2429a832f3163abc67">cba72b6624cc4179c4a2196e9b75023fa2fe420773d965718bfe72ffda4b2fb2225db9528bdad5ba5e6014907d4f93fb33eb5ec9089d70daec7631ccf609f7267962a6306d340bedf9ca5716cb12a1a2dcbc424e5dce7e8a0bbd7ee880f52cb84d5eaa32e7b09cb452ed609b5e220a7ede8816aed5b618a531a2556b603e6d8bb245d2e702c191b0c8ac94d31427ea7a170b897160037f12790af582b2f5f2165f8229f75469920fd81dca90eeb09b67edfa8ccd6a34dd9fddbc9214f61e71672ec563e63cddd979f02c5d7bf227f5a0f298d97703c8f8a72165d5cdca6dd413161c4bd749c9f27fac10227e826687b926d171e221d655ba57a4104eba05484830a8a6b54d28fe9d1ac81b1b89399ae014b614821bc02878358475eb53d995397a7b5d34e3156df15c785e50bba37cf56c23cf6911f32fe6bae8a38660788e1d42b58a45e546644aee3476833085a14f7443b6f3c5eb8a37a880bf9bc25124716f6ae9924485b3b14767626ff5b51a4f4fe60c45598332cb48ba88f5222e44e6ac2e4f871a291205d429fa5d31fa302b7dad914b8934ed0bff1ed69bc8d07ddf216ff19644be3ab73a03925682f21a2fdd565494513bad000e0692d41d98c2009afbac1614967e18f7272a49075273bb7615bb3a21026d950fcb75ba788fdde30a31f730bc638a321b3f9fe72040bda3f00d51022532edfb6e758d27afb15bc93b22238b815831a22ecf4550bc949aa5aa55dab2f14d8d1d722533cae0e2ceae2cd45412e9c82cdc9f995bc819afeed962eeb51e47c41de98d6298088a6a2a71b591394df738dd0904c8657c4c275676d5368a6fac48286ddfe39081bf59d873cbfaf9b0568bd444cd24f0310933acd900cae82d975f69426875505a3673eb41804f9304b803dabc813b945b392d1ab80eee3c1cb33451f58a8433b75d4642af092fcc112827e4a875208cd64fc5a49282b56f769a8ae521d22bf41c0951a14f4d35254a6298a3586766470d0edb9d1ff5778166a2cd7237f21a0cbd354493a9b21d181099c75daaa209ebe5cc93a4f742990424a56bc8a84b276163d38d2a44feea1fcabb4a31de9847cdac340dcce798bd331836cbdadb2f95daea8606591a144b36d96f3d8935a9a8ad1adfc839289682a7c8f01b6d8dcd0fab48e0cb0edf79d865ccfd3ef482b966c66b29138004114b62fed58cf9c64a0d522791000dbd05ccf87e9b949229bfd07aed5290b3166cb063db421e2351c892c5729e89eb799d17ecfe29c2d6a88f980bf186a3184d37acc0acc083348ae38de2b77f179770f41c2870e6c5669de109af8cc47e7fec835a482164b58036b9c2a43277b1bb490df364f52923d48b15423a8ba53d165d6e6e01949a59eb3233cb38b02ea771a935843cfa43b6fde58a51944f35efd62fef3ff5f5a6f1bce805b0cde0eb1a3265f943d88c0b147b7b954a2080c2f83e45cec4cb7134d8fb3d1ab80a94b75ab08645d6664e32a66ab454e54f37c67fddfa247853c71cd4d348fb53c4529e40363287badc1bae85015d991e156a796520c87b8950850343b22fc3cd5d628455df660958c383976f13c2d440142582a702e38a763d0b7ccc3d0b8875c95a79232aac8ac0baa1309757defcd76766ca992294c7f98c84e068e2de6fba66497f3873c27b6a057617cc6890a2dd793a3819ff0830be2ecb8c222e37932ff935913f20ceaf61ed46b3514fa00b60e06128c804ae4ab2e3a62646dc10b780f8364b0e708de4ec9463397c0d7446f2cdcc124ada890bbc26c62f9264b49650ee13859608c9b993650376d42687c639a2f0119e902d990257bef4a9a4ef39597abb89589adc9ad4631aec643ad6ec224fa1ee8c13fd38d3d21301aa18367b7c0df640d9faf7fb8218dc0c42ebb05f87eebd540e3ee48e9ce88fd8766e53cb6f4a7ceaf82aa8441bd2e54980a2826382595b652ca22de8d927756bc28af79c39e83c6c68b05744dc693a0f8edd2026d0e219423e47be44622211892e4459e9cfbd32ec71ed316a29ea2741eed48142661fe954849eec612dda221e6336284f40361dcd92e94a271365a5253ad9781a2f1862a7cdeb16eace208aa5d1229c7c35da1cd7db56918a92420baa5137bc41562616472e40434dbf93fbe93d95764d7234f6c6133c3d586c2b2d180887c5744141f7c16a242d808924df3814506253e0e3f06a3c47913dd4637a72f024a7acbc17be2ec9a05e5a6c0de3aadeceb69165ccc45fd7408b18dc9fb8f95d67537c2fbd59525c4f56363888236f8abbecdf6efa3b741f7efbf8be43cf6c0df785e653b0483d3c2bb2578c5faaec878dfb4e3e1577ad11b631</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-shrink">
-      <input class="hbe hbe-input-field hbe-input-field-shrink" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-shrink" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-shrink">请输入密码</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>Start-Page</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
