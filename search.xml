@@ -72,10 +72,10 @@
 <ul>
 <li><strong>鼠标</strong></li>
 </ul>
-<p>英文名为“Mouse”，当人们移动鼠标时，电脑屏幕上就会有一个箭头指针跟着移动，并可以很准确指到想指的位置，快速地在屏幕上定位，它是人们使用电脑不可缺少的部件之一。 键盘鼠标接口有PS/2和USB两种。硬件的鼠标分为光电和机械两种（机械已被光电淘汰）。</p>
+<p>英文名为“Mouse”，当人们移动鼠标时，电脑屏幕上就会有一个箭头指针跟着移动，并可以很准确指到想指的位置，快速地在屏幕上定位，它是人们使用电脑不可缺少的部件之一。 键盘鼠标接口有PS&#x2F;2和USB两种。硬件的鼠标分为光电和机械两种（机械已被光电淘汰）。</p>
 <p><img src="https://imgsrc.baidu.com/baike/pic/item/562c11dfa9ec8a13e68ffe39fe03918fa1ecc056.jpg" alt="鼠标"></p>
 <ul>
-<li><strong>音箱</strong> </li>
+<li><strong>音箱</strong></li>
 </ul>
 <p>英文名为“Loud speaker”,通过音频线连接到功率放大器，再通过晶体管把声音放大，输出到喇叭上，从而使喇叭发出电脑的声音。一般的电脑音箱可分为2、2.1 、3 .1、4、4.1、5.1、7.1这几种，音质也各有差异。</p>
 <p><img src="https://imgsrc.baidu.com/baike/pic/item/8718367adab44aede83ac3aeb21c8701a18bfb00.jpg" alt="音响"></p>
@@ -97,7 +97,7 @@
 <ul>
 <li><strong>移动存储卡及读卡器</strong></li>
 </ul>
-<p>存储卡是利用闪存（Flash  Memory）技术达到存储电子信息的存储器，一般应用在数码相机、掌上电脑、MP3、MP4等小型数码产品中作为存储介质，所以样子小巧，犹如一张卡片，所以称之为闪存卡。根据不同的生产厂商和不同的应用，闪存卡有Smart Media（SM卡）、Compact Flash（CF卡），Multi Media Card（MMC卡），Secure  Digital（SD卡）、Memory  Stick（记忆棒），TF卡等多种类型，这些闪存卡虽然外观、规格不同，但是技术原理都是相同的。由于闪存卡本身并不能直接被电脑辨认，读卡器就是一个两者的沟通桥梁。读卡器（Card Reader）可使用很多种存储卡，如Compact Flash or Smart Media or  Microdrive存储卡等，作为存储卡的信息存取装置。读卡器使用USB1.1/USB2.0的传输介面，支持热拔插。与普通USB设备一样，只需插入电脑的USB端口，然后插用存储卡就可以使用了。 按照速度来划分有USB1.1、USB2.0以及USB3.0，按用途来划分，有单一读卡器和多合一读卡器。</p>
+<p>存储卡是利用闪存（Flash  Memory）技术达到存储电子信息的存储器，一般应用在数码相机、掌上电脑、MP3、MP4等小型数码产品中作为存储介质，所以样子小巧，犹如一张卡片，所以称之为闪存卡。根据不同的生产厂商和不同的应用，闪存卡有Smart Media（SM卡）、Compact Flash（CF卡），Multi Media Card（MMC卡），Secure  Digital（SD卡）、Memory  Stick（记忆棒），TF卡等多种类型，这些闪存卡虽然外观、规格不同，但是技术原理都是相同的。由于闪存卡本身并不能直接被电脑辨认，读卡器就是一个两者的沟通桥梁。读卡器（Card Reader）可使用很多种存储卡，如Compact Flash or Smart Media or  Microdrive存储卡等，作为存储卡的信息存取装置。读卡器使用USB1.1&#x2F;USB2.0的传输介面，支持热拔插。与普通USB设备一样，只需插入电脑的USB端口，然后插用存储卡就可以使用了。 按照速度来划分有USB1.1、USB2.0以及USB3.0，按用途来划分，有单一读卡器和多合一读卡器。</p>
 <p><img src="https://imgsrc.baidu.com/baike/pic/item/5882b2b7d0a20cf47682e1d676094b36acaf99ac.jpg" alt="读卡器"></p>
 <h3 id="软件系统"><a href="#软件系统" class="headerlink" title="软件系统"></a>软件系统</h3><p>所谓软件是指为了使用计算机和提高其效率而组织的程序以及用于软件开发、计算机使用和维护的有关文档。软件系统可分为系统软件和应用软件两大类。</p>
 <h4 id="系统软件"><a href="#系统软件" class="headerlink" title="系统软件"></a>系统软件</h4><p>系统软件（System  software），由一组控制计算机系统并管理其资源的程序组成，其主要功能包括：启动计算机，存储、加载和执行应用程序，对文件进行排序、检索，将程序语言翻译成机器语言等。实际上，系统软件可以看作用户与计算机的接口，它为应用软件和用户提供了控制、访问硬件的手段，这些功能主要由操作系统完成。此外，编译系统和各种工具软件也属此类，它们从另一方面辅助用户使用计算机。下面分别介绍它们的功能。 </p>
@@ -107,9 +107,9 @@
 <li>进程管理模块</li>
 <li>内存管理模块</li>
 <li>文件系统管理模块</li>
-<li>I/O 设备管理模块<ul>
-<li>&emsp; 磁盘</li>
-<li>&emsp; 键盘、鼠标和监视器</li>
+<li>I&#x2F;O 设备管理模块<ul>
+<li>&amp;emsp; 磁盘</li>
+<li>&amp;emsp; 键盘、鼠标和监视器</li>
 </ul>
 </li>
 <li>网络管理模块</li>
@@ -135,6 +135,227 @@
       </tags>
   </entry>
   <entry>
+    <title>扩容挂载点</title>
+    <url>/posts/2021-10-30/Extend-the-MountPoint/</url>
+    <content><![CDATA[<hr>
+<p><strong>情景</strong>：当服务器磁盘挂载的目录空间不足时，就需要对相应的挂载点进行扩容，以<code>/home</code>挂载点为例</p>
+<hr>
+<!--前言-->
+
+<h2 id="一、检查磁盘是否做过RAID"><a href="#一、检查磁盘是否做过RAID" class="headerlink" title="一、检查磁盘是否做过RAID"></a>一、检查磁盘是否做过RAID</h2><ol>
+<li>将硬盘插入到服务器可用的槽位</li>
+<li>重启服务器进入bios设置，依次选择<br><code>Chipset</code>–&gt;<code>PCH Configuration</code>–&gt;<code>PCH SATA Configuration</code>–&gt;<code>Configure SATA as</code>–&gt;<code>RAID</code>  确认待扩容的硬盘是否做过raid（<strong>如果没有做过raid，是有RAID这个配置选项的</strong>）</li>
+<li>若有磁盘配置有RAID选项则需要选择该选项。详细操作步骤可参考下列图片</li>
+</ol>
+<span id="more"></span>
+
+<table>
+    <tr>
+        <td ><center>
+            <img width = '' height ='' src="http://images.jianmuzi.top/extend_mountpoint/set_bios_1.png"/>
+            <br/>图一  bios设置1
+        </center></td>
+        <td ><center>
+            <img width = '' height ='' src="http://images.jianmuzi.top/extend_mountpoint/set_bios_2.png"/>
+        <br/>图二 bios设置2
+        </center></td>
+    </tr>
+    <tr>
+        <td><center><img width = '' height ='' src="http://images.jianmuzi.top/extend_mountpoint/set_bios_3.png"/> <br/>图三 bios设置3 </center></td>
+        <td ><center><img width = '' height ='' src="http://images.jianmuzi.top/extend_mountpoint/set_bios_4.png"/> <br/>图四 bios设置4 </center> </td>
+    </tr>
+</table>
+
+
+<h2 id="二、磁盘分区、格式化、挂载操作"><a href="#二、磁盘分区、格式化、挂载操作" class="headerlink" title="二、磁盘分区、格式化、挂载操作"></a>二、磁盘分区、格式化、挂载操作</h2><h3 id="1-用root用户登录系统"><a href="#1-用root用户登录系统" class="headerlink" title="1. 用root用户登录系统"></a>1. 用root用户登录系统</h3><h3 id="2-查看系统是否识别出新加的硬盘"><a href="#2-查看系统是否识别出新加的硬盘" class="headerlink" title="2. 查看系统是否识别出新加的硬盘"></a>2. 查看系统是否识别出新加的硬盘</h3><p>&amp;emsp; &amp;#8195; 使用<code>lsblk</code>（list block，即用于列出所有可用块设备信息，而且还能显示他们之间的依赖关系），如下图所示  </p>
+<div align="center"> 
+<img src="http://images.jianmuzi.top/extend_mountpoint/lsblk_new_disk.png" width = 600 height = 240 /> 
+<br/> 图5 识别新硬盘
+</div>
+
+
+<h3 id="3-磁盘分区"><a href="#3-磁盘分区" class="headerlink" title="3.磁盘分区"></a>3.磁盘分区</h3><p><strong>分区说明</strong>：<code>fdsik</code>只支持2T硬盘的分区，如果硬盘是2T以上的，分区要用<code>parted</code>。  </p>
+<h4 id="1）使用fdisk命令分区（硬盘容量小于等于2T）"><a href="#1）使用fdisk命令分区（硬盘容量小于等于2T）" class="headerlink" title="1）使用fdisk命令分区（硬盘容量小于等于2T）"></a>1）使用fdisk命令分区（硬盘容量小于等于2T）</h4><p>&amp;emsp;&amp;emsp; a. 输入<code>fdisk /dev/sdb </code>（对新加磁盘sdb进行分区）<br>&amp;emsp;&amp;emsp; b. 后续Command 依次输入：<code>n</code>(新建一个分区)–&gt;<code>p</code>(选择主分区)–&gt;<code>1</code>(选择分区号)–&gt;直接回车(表示使用默认起始扇区)–&gt;直接回车(不设置结束扇区，则默认使用全部磁盘)–&gt;<code>t</code>(改磁盘类型)–&gt;<code>1</code>(选分区，若可选则选)–&gt;<code>8e</code>(将磁盘设置为LVM模式)–&gt;<code>p</code>(显示磁盘信息)–&gt;<code>w</code>(使前面的操作生效并退出)  </p>
+<p style="text-indent:2em"> c. 详细操作可参照下列图片 </p>
+
+<center>
+    <img src="http://images.jianmuzi.top/extend_mountpoint/fdisk_1.png"/> 
+    <img src="http://images.jianmuzi.top/extend_mountpoint/fdisk_2.png"/>
+    <br/> 图6  fdisk分区
+</center>
+
+<p>&amp;emsp;&amp;emsp; d. #<code>lsblk</code>(查看分区后的块设备信息）</p>
+<div align="center">
+    <br/>
+    <img width = '' height= '' src="http://images.jianmuzi.top/extend_mountpoint/lsblk_parted.png"/>
+    <br/>图7 检查磁盘新分区
+</div>
+
+<h4 id="2）使用parted命令分区（不论硬盘容量大小）"><a href="#2）使用parted命令分区（不论硬盘容量大小）" class="headerlink" title="2）使用parted命令分区（不论硬盘容量大小）"></a>2）使用parted命令分区（不论硬盘容量大小）</h4><p>&amp;emsp;&amp;emsp; a. 输入<code>parted /dev/sdb </code>（对新加磁盘sdb进行分区）<br>&amp;emsp;&amp;emsp; b. 依次输入：<code>p</code>(查看硬盘信息)–&gt;<code>mklabel gpt</code>(创建gpt分区表) –&gt;<code>y</code>(warning数据删除) –&gt;<code>mkpart</code>(创建分区) –&gt;<code>sdb1</code>(输入分区名)–&gt;<code>xfs</code>(文件系统类型) –&gt;<code>0</code>(起始位置) –&gt;硬盘容量大小(终止位置) –&gt;<code>I</code>(Ignore，忽视warning) –&gt;<code>p</code>(查看硬盘信息)  </p>
+<p style="text-indent:2em"> c. 详细操作可参照下列图片 </p>
+
+<div align="center"> 
+    <img src="http://images.jianmuzi.top/extend_mountpoint/parted_1.png"
+     width =  height =  /> 
+    <img src="http://images.jianmuzi.top/extend_mountpoint/parted_2.png" width = '' height = '' />
+    <br/> 图8 parted分区
+</div>
+
+<p>&amp;emsp;&amp;emsp; d. # <code>lsblk</code>(查看分区后的块设备信息）</p>
+<center>
+    <br/>
+    <img src="http://images.jianmuzi.top/extend_mountpoint/lsblk_parted.png"/>
+    <br/>图9 检查磁盘新分区
+</center>
+
+<h3 id="4-将新增的分区创建为物理卷"><a href="#4-将新增的分区创建为物理卷" class="headerlink" title="4.将新增的分区创建为物理卷"></a>4.将新增的分区创建为物理卷</h3><p>&amp;emsp;&amp;emsp; a. # <code>pvcreate /dev/sdb1</code> (新增物理卷)<br>&amp;emsp;&amp;emsp; b. # <code>pvdisplay</code> （查看物理卷信息，见下图）</p>
+<center>
+    <img src="http://images.jianmuzi.top/extend_mountpoint/pvcreate_pvdisplay_new.png" width = '' height = '550'/>
+    <br/>
+</center>
+
+<h3 id="5-扩容-x2F-home所挂载分区对应的逻辑卷（LV）"><a href="#5-扩容-x2F-home所挂载分区对应的逻辑卷（LV）" class="headerlink" title="5. 扩容&#x2F;home所挂载分区对应的逻辑卷（LV）"></a>5. 扩容&#x2F;home所挂载分区对应的逻辑卷（LV）</h3><h4 id="1）查询-x2F-home所挂载的磁盘分区"><a href="#1）查询-x2F-home所挂载的磁盘分区" class="headerlink" title="1）查询&#x2F;home所挂载的磁盘分区"></a>1）查询&#x2F;home所挂载的磁盘分区</h4><p>&amp;emsp;&amp;emsp; # <code>lsblk -ip</code> （结果如下图）</p>
+<center>
+    <img src="http://images.jianmuzi.top/extend_mountpoint/lsblk_ip.png" width = '' height = ''/>
+</center>
+
+<p>由上图可知<code>/home</code>挂载到了<code>/dev/mapper/centos-home</code>分区上  </p>
+<h4 id="2）查询该磁盘分区所对应的LV（逻辑卷）"><a href="#2）查询该磁盘分区所对应的LV（逻辑卷）" class="headerlink" title="2）查询该磁盘分区所对应的LV（逻辑卷）"></a>2）查询该磁盘分区所对应的LV（逻辑卷）</h4><p>&amp;emsp;&amp;emsp; # <code>lvdisplay /dev/mapper/centos-home</code> （结果见下图）</p>
+<center>
+    <img src="http://images.jianmuzi.top/extend_mountpoint/lvdisplay_home_1.png" width = '' height = ''/>
+</center>
+
+<p>由上图可知磁盘分区<code>/dev/mapper/centos-home</code>所在逻辑卷为<code>home</code>，所在卷组为<code>centos</code>，现在就知道了，我们待会要扩容的卷组以及逻辑卷了。</p>
+<h4 id="3）查询卷组信息（新增物理卷前）"><a href="#3）查询卷组信息（新增物理卷前）" class="headerlink" title="3）查询卷组信息（新增物理卷前）"></a>3）查询卷组信息（新增物理卷前）</h4><p>&amp;emsp;&amp;emsp; # <code>vgdisplay centos</code>（结果见下图）</p>
+<center>
+    <img src="http://images.jianmuzi.top/extend_mountpoint/vgdisplay_centos_1.png" width = '700' height = ''/>
+</center>
+
+<h4 id="4）将新增物理卷（-x2F-dev-x2F-sdb1）扩展至卷组centos"><a href="#4）将新增物理卷（-x2F-dev-x2F-sdb1）扩展至卷组centos" class="headerlink" title="4）将新增物理卷（&#x2F;dev&#x2F;sdb1）扩展至卷组centos"></a>4）将新增物理卷（&#x2F;dev&#x2F;sdb1）扩展至卷组centos</h4><p>&amp;emsp;&amp;emsp; a. # <code>vgextend centos /dev/sdb1</code> (扩展centos卷组)<br>&amp;emsp;&amp;emsp; b. # <code>pvdisplay centos</code> (结果见下图)  </p>
+<center>
+    <img src="http://images.jianmuzi.top/extend_mountpoint/vgextend_pvdisplay_centos.png" width = '700' height = ''/>
+</center>  
+
+<p>&amp;emsp;&amp;emsp; c. # <code>vgdisplay</code> （结果见下图）</p>
+<center>  
+    <img src="http://images.jianmuzi.top/extend_mountpoint/vgdisplay_centos_2.png" width = '700' height = ''/>
+</center>  
+至此，我们已经实现了home逻辑卷对应的centos卷组的扩容。
+
+<h4 id="5-将centos卷组中扩容得到的空间分配给指定逻辑卷"><a href="#5-将centos卷组中扩容得到的空间分配给指定逻辑卷" class="headerlink" title="5) 将centos卷组中扩容得到的空间分配给指定逻辑卷"></a>5) 将centos卷组中扩容得到的空间分配给指定逻辑卷</h4><p>&amp;emsp;&amp;emsp; a. # <code>lvdisplay /dev/centos/home</code> （LV扩容前，先查看逻辑卷home的容量）</p>
+<center>  
+    <img src="http://images.jianmuzi.top/extend_mountpoint/lvdisplay_home_2.png" width = '700' height = ''/>
+</center>
+
+<p>&amp;emsp;&amp;emsp; b. # <code>lvextend -l +100%FREE /dev/centos/home</code> （扩容逻辑卷home）</p>
+<p>&amp;emsp;&amp;emsp; c. # <code>lvdisplay /dev/centos/home</code> （与LV扩容前对比）  </p>
+<center>  
+    <img src="http://images.jianmuzi.top/extend_mountpoint/lvextend_lvdisplay_home.png" width = '700' height = ''/>
+</center>
+
+<h3 id="6-同步LV容量到文件系统"><a href="#6-同步LV容量到文件系统" class="headerlink" title="6. 同步LV容量到文件系统"></a>6. 同步LV容量到文件系统</h3><p>&amp;emsp;&amp;emsp; a. # <code>df -h</code> （查看文件系统的使用情况）</p>
+<center>  
+    <img src="http://images.jianmuzi.top/extend_mountpoint/df_h_1.png" width = '700' height = ''/>
+</center>
+
+<p>可以看到&#x2F;home挂载点的容量并没有增加，这是因为目前还只是扩容了LV，但是并未扩容其对应的文件系统，故还需要增加对应文件系统的容量。</p>
+<p>&amp;emsp;&amp;emsp; b. # <code>cat /etc/fstab</code>（确认&#x2F;home的文件系统类型）  </p>
+<center>
+    <img src="http://images.jianmuzi.top/extend_mountpoint/cat_fstab.png" width = '700' height = ''/>
+</center>  
+
+<p>可以看出&#x2F;home挂载点对应的文件系统类型为xfs类型，故使用xfs_growfs工具对其进行扩容，若是其他文件系统类型，需要使用对应的工具扩容文件系统，如ext4文件系统则要使用resize2fs工具。</p>
+<p>&amp;emsp;&amp;emsp; c. # <code>xfs_growfs /dev/mapper/centos-home</code>（同步LV容量到xfs文件系统）  </p>
+<p>&amp;emsp;&amp;emsp; d. # <code>df -h</code> （查看&#x2F;home是否已扩容）  </p>
+<center>  
+    <img src="http://images.jianmuzi.top/extend_mountpoint/df_h_2.png" width = '700' height = ''/>
+</center>  
+
+<p>至此，我们就实现了对指定挂载点&#x2F;home的扩容。</p>
+<h2 id="三、章末补充"><a href="#三、章末补充" class="headerlink" title="三、章末补充"></a>三、章末补充</h2><h3 id="一）取消扩容（以下操作很危险，会影响服务器中调用-x2F-home目录的服务进程）"><a href="#一）取消扩容（以下操作很危险，会影响服务器中调用-x2F-home目录的服务进程）" class="headerlink" title="一）取消扩容（以下操作很危险，会影响服务器中调用&#x2F;home目录的服务进程）"></a>一）取消扩容（以下操作很危险，会影响服务器中调用&#x2F;home目录的服务进程）</h3><p><strong>目的</strong>：将磁盘sdb扩容到home逻辑卷的容量释放，实现centos磁盘空间重新分配。<br>由于xfs文件系统不能缩小空间，所以只能将&#x2F;home先卸载，移除新磁盘物理卷移出centos卷组，为&#x2F;home重建新的逻辑卷，再格式化，并挂载</p>
+<h4 id="1•-备份-x2F-home目录下的文件"><a href="#1•-备份-x2F-home目录下的文件" class="headerlink" title="1• 备份 &#x2F;home目录下的文件"></a>1• 备份 &#x2F;home目录下的文件</h4><blockquote>
+<p># <code>tar -czvf /root/home.tgz -C /home .</code></p>
+</blockquote>
+<h4 id="2•-查看备份内容的完整性"><a href="#2•-查看备份内容的完整性" class="headerlink" title="2• 查看备份内容的完整性"></a>2• 查看备份内容的完整性</h4><blockquote>
+<p># <code>tar -tvf /root/home.tgz</code></p>
+</blockquote>
+<h4 id="3•-取消挂载-x2F-home"><a href="#3•-取消挂载-x2F-home" class="headerlink" title="3• 取消挂载&#x2F;home"></a>3• 取消挂载&#x2F;home</h4><blockquote>
+<p># <code>umount /dev/mapper/centos-home</code><br># 有可能有target is busy错误，使用<code>umount -l /dev/mapper/centos-home</code>， l表示lazy</p>
+</blockquote>
+<h4 id="4•-移除home逻辑卷"><a href="#4•-移除home逻辑卷" class="headerlink" title="4• 移除home逻辑卷"></a>4• 移除home逻辑卷</h4><blockquote>
+<p># <code>lvremove /dev/mapper/centos-home</code>  # 有可能有Logical volume centos&#x2F;home contains a filesystem in use.<br># 则使用<code>fuser -m -v -f -k /home</code> 关闭所有home进程（非常危险）</p>
+</blockquote>
+<h4 id="5•-将物理卷sdb1移出centos卷组"><a href="#5•-将物理卷sdb1移出centos卷组" class="headerlink" title="5• 将物理卷sdb1移出centos卷组"></a>5• 将物理卷sdb1移出centos卷组</h4><blockquote>
+<p># <code>vgreduce centos /dev/sdb1</code></p>
+</blockquote>
+<h4 id="6•-为-x2F-home重建新的逻辑卷，格式化，并挂载"><a href="#6•-为-x2F-home重建新的逻辑卷，格式化，并挂载" class="headerlink" title="6• 为&#x2F;home重建新的逻辑卷，格式化，并挂载"></a>6• 为&#x2F;home重建新的逻辑卷，格式化，并挂载</h4><blockquote>
+<p># <code>lvcreate -l +100%FREE -n home centos</code> #重建home逻辑卷<br># <code>mkfs.xfs /dev/centos/home</code>  #格式化为xfs文件系统<br># <code>mount /dev/mapper/centos-home</code>  #将&#x2F;home挂载出来</p>
+</blockquote>
+<h4 id="7•-验证磁盘sdb空间是否释放并且-x2F-home是否重新挂载成功"><a href="#7•-验证磁盘sdb空间是否释放并且-x2F-home是否重新挂载成功" class="headerlink" title="7• 验证磁盘sdb空间是否释放并且&#x2F;home是否重新挂载成功"></a>7• 验证磁盘sdb空间是否释放并且&#x2F;home是否重新挂载成功</h4><blockquote>
+<p># <code>lsblk</code> #查看块设备信息<br># <code>df -h</code> #查看文件系统信息</p>
+</blockquote>
+<h4 id="8•-恢复备份"><a href="#8•-恢复备份" class="headerlink" title="8• 恢复备份"></a>8• 恢复备份</h4><blockquote>
+<p># <code>tar -xzvf /root/home.tgz -C /home</code></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Extend_MountPoint</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/2022-03-18/hello-world/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密码错误，请重新输入" data-whm="抱歉，文章不能被校验，但解密后内容还可以看">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b5c19131c9c93fdb74d1f53c9a692dd9ff10d6c404ce7d2429a832f3163abc67">cba72b6624cc4179c4a2196e9b75023fa2fe420773d965718bfe72ffda4b2fb2225db9528bdad5ba5e6014907d4f93fb33eb5ec9089d70daec7631ccf609f7267962a6306d340bedf9ca5716cb12a1a2dcbc424e5dce7e8a0bbd7ee880f52cb84d5eaa32e7b09cb452ed609b5e220a7ede8816aed5b618a531a2556b603e6d8bb245d2e702c191b0c8ac94d31427ea7a170b897160037f12790af582b2f5f2165f8229f75469920fd81dca90eeb09b67edfa8ccd6a34dd9fddbc9214f61e71672ec563e63cddd979f02c5d7bf227f5a0f298d97703c8f8a72165d5cdca6dd413161c4bd749c9f27fac10227e826687b926d171e221d655ba57a4104eba05484830a8a6b54d28fe9d1ac81b1b89399ae014b614821bc02878358475eb53d995397a7b5d34e3156df15c785e50bba37cf56c23cf6911f32fe6bae8a38660788e1d42b58a45e546644aee3476833085a14f7443b6f3c5eb8a37a880bf9bc25124716f6ae9924485b3b14767626ff5b51a4f4fe60c45598332cb48ba88f5222e44e6ac2e4f871a291205d429fa5d31fa302b7dad914b8934ed0bff1ed69bc8d07ddf216ff19644be3ab73a03925682f21a2fdd565494513bad000e0692d41d98c2009afbac1614967e18f7272a49075273bb7615bb3a21026d950fcb75ba788fdde30a31f730bc638a321b3f9fe72040bda3f00d51022532edfb6e758d27afb15bc93b22238b815831a22ecf4550bc949aa5aa55dab2f14d8d1d722533cae0e2ceae2cd45412e9c82cdc9f995bc819afeed962eeb51e47c41de98d6298088a6a2a71b591394df738dd0904c8657c4c275676d5368a6fac48286ddfe39081bf59d873cbfaf9b0568bd444cd24f0310933acd900cae82d975f69426875505a3673eb41804f9304b803dabc813b945b392d1ab80eee3c1cb33451f58a8433b75d4642af092fcc112827e4a875208cd64fc5a49282b56f769a8ae521d22bf41c0951a14f4d35254a6298a3586766470d0edb9d1ff5778166a2cd7237f21a0cbd354493a9b21d181099c75daaa209ebe5cc93a4f742990424a56bc8a84b276163d38d2a44feea1fcabb4a31de9847cdac340dcce798bd331836cbdadb2f95daea8606591a144b36d96f3d8935a9a8ad1adfc839289682a7c8f01b6d8dcd0fab48e0cb0edf79d865ccfd3ef482b966c66b29138004114b62fed58cf9c64a0d522791000dbd05ccf87e9b949229bfd07aed5290b3166cb063db421e2351c892c5729e89eb799d17ecfe29c2d6a88f980bf186a3184d37acc0acc083348ae38de2b77f179770f41c2870e6c5669de109af8cc47e7fec835a482164b58036b9c2a43277b1bb490df364f52923d48b15423a8ba53d165d6e6e01949a59eb3233cb38b02ea771a935843cfa43b6fde58a51944f35efd62fef3ff5f5a6f1bce805b0cde0eb1a3265f943d88c0b147b7b954a2080c2f83e45cec4cb7134d8fb3d1ab80a94b75ab08645d6664e32a66ab454e54f37c67fddfa247853c71cd4d348fb53c4529e40363287badc1bae85015d991e156a796520c87b8950850343b22fc3cd5d628455df660958c383976f13c2d440142582a702e38a763d0b7ccc3d0b8875c95a79232aac8ac0baa1309757defcd76766ca992294c7f98c84e068e2de6fba66497f3873c27b6a057617cc6890a2dd793a3819ff0830be2ecb8c222e37932ff935913f20ceaf61ed46b3514fa00b60e06128c804ae4ab2e3a62646dc10b780f8364b0e708de4ec9463397c0d7446f2cdcc124ada890bbc26c62f9264b49650ee13859608c9b993650376d42687c639a2f0119e902d990257bef4a9a4ef39597abb89589adc9ad4631aec643ad6ec224fa1ee8c13fd38d3d21301aa18367b7c0df640d9faf7fb8218dc0c42ebb05f87eebd540e3ee48e9ce88fd8766e53cb6f4a7ceaf82aa8441bd2e54980a2826382595b652ca22de8d927756bc28af79c39e83c6c68b05744dc693a0f8edd2026d0e219423e47be44622211892e4459e9cfbd32ec71ed316a29ea2741eed48142661fe954849eec612dda221e6336284f40361dcd92e94a271365a5253ad9781a2f1862a7cdeb16eace208aa5d1229c7c35da1cd7db56918a92420baa5137bc41562616472e40434dbf93fbe93d95764d7234f6c6133c3d586c2b2d180887c5744141f7c16a242d808924df3814506253e0e3f06a3c47913dd4637a72f024a7acbc17be2ec9a05e5a6c0de3aadeceb69165ccc45fd7408b18dc9fb8f95d67537c2fbd59525c4f56363888236f8abbecdf6efa3b741f7efbf8be43cf6c0df785e653b0483d3c2bb2578c5faaec878dfb4e3e1577ad11b631</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-shrink">
+      <input class="hbe hbe-input-field hbe-input-field-shrink" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-shrink" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-shrink">请输入密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>Start-Page</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>//archives/01/</url>
+    <content><![CDATA[<!--前言-->  
+<p>测试本页代码下载<br>设置永久链接permalink: archives&#x2F;01，其中01不能带后缀</p>
+<p>测试代码高亮</p>
+<pre><code class="highlight bash">$ hexo new <span class="string">&quot;My New Post&quot;</span>
+
+$ hexo server
+
+$ hexo generate
+
+$ hexo deploy</code></pre>
+
+<span id="more"></span>
+
+
+<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
+      <categories>
+        <category>1</category>
+      </categories>
+      <tags>
+        <tag>name01</tag>
+        <tag>name02</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CentOS7 更改默认启动内核、删除无用内核</title>
     <url>/posts/2022-02-11/Boot-Linux/</url>
     <content><![CDATA[<p>服务器或Linux系统电脑开机，出现多个内核启动选项，CentOS系统默认选择第一个最新的内核启动，但常常这个最新的内核没有作用，有可能会导致服务器或电脑无法自动开机的现象。此时，需要修改系统默认的开机启动内核，附带删除那个无用的内核。</p>
@@ -142,7 +363,7 @@
 
 <p>列表（如下三个，对应开机启动的内核选项）：</p>
 <blockquote>
-<p>if [ x”${feature_menuentry_id}” = xy ]; then<br>menuentry_id_option=”–id”<br>menuentry_id_option=””<br>export menuentry_id_option<br><strong>menuentry</strong> ‘CentOS Linux (3.10.0-1160.53.1.el7.x86_64) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-3.10.0-1160.el7.x86_64-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
+<p>if [ x”${feature_menuentry_id}” &#x3D; xy ]; then<br>menuentry_id_option&#x3D;”–id”<br>menuentry_id_option&#x3D;””<br>export menuentry_id_option<br><strong>menuentry</strong> ‘CentOS Linux (3.10.0-1160.53.1.el7.x86_64) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-3.10.0-1160.el7.x86_64-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
 <p><strong>menuentry</strong> ‘CentOS Linux (3.10.0-1160.el7.x86_64) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-3.10.0-1160.el7.x86_64-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
 <p><strong>menuentry</strong> ‘CentOS Linux (0-rescue-05a2d16ea7ab4e2983412cb94d46c4c8) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-0-rescue-05a2d16ea7ab4e2983412cb94d46c4c8-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
 </blockquote>
@@ -164,7 +385,7 @@
 
 <p>结果：</p>
 <blockquote>
-<p>saved_entry=CentOS Linux (3.10.0-1160.el7.x86_64) 7 (Core)</p>
+<p>saved_entry&#x3D;CentOS Linux (3.10.0-1160.el7.x86_64) 7 (Core)</p>
 </blockquote>
 <p>————————————————————————————————————————————————————</p>
 <h2 id="2。CentOS7-删除多余内核"><a href="#2。CentOS7-删除多余内核" class="headerlink" title="2。CentOS7 删除多余内核"></a>2。CentOS7 删除多余内核</h2><h3 id="1）查看内核列表"><a href="#1）查看内核列表" class="headerlink" title="1）查看内核列表"></a>1）查看内核列表</h3><pre><code class="highlight plaintext">rpm -qa | grep kernel</code></pre>
@@ -193,201 +414,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/posts/2022-03-18/hello-world/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密码错误，请重新输入" data-whm="抱歉，文章不能被校验，但解密后内容还可以看">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b5c19131c9c93fdb74d1f53c9a692dd9ff10d6c404ce7d2429a832f3163abc67">cba72b6624cc4179c4a2196e9b75023fa2fe420773d965718bfe72ffda4b2fb2225db9528bdad5ba5e6014907d4f93fb33eb5ec9089d70daec7631ccf609f7267962a6306d340bedf9ca5716cb12a1a2dcbc424e5dce7e8a0bbd7ee880f52cb84d5eaa32e7b09cb452ed609b5e220a7ede8816aed5b618a531a2556b603e6d8bb245d2e702c191b0c8ac94d31427ea7a170b897160037f12790af582b2f5f2165f8229f75469920fd81dca90eeb09b67edfa8ccd6a34dd9fddbc9214f61e71672ec563e63cddd979f02c5d7bf227f5a0f298d97703c8f8a72165d5cdca6dd413161c4bd749c9f27fac10227e826687b926d171e221d655ba57a4104eba05484830a8a6b54d28fe9d1ac81b1b89399ae014b614821bc02878358475eb53d995397a7b5d34e3156df15c785e50bba37cf56c23cf6911f32fe6bae8a38660788e1d42b58a45e546644aee3476833085a14f7443b6f3c5eb8a37a880bf9bc25124716f6ae9924485b3b14767626ff5b51a4f4fe60c45598332cb48ba88f5222e44e6ac2e4f871a291205d429fa5d31fa302b7dad914b8934ed0bff1ed69bc8d07ddf216ff19644be3ab73a03925682f21a2fdd565494513bad000e0692d41d98c2009afbac1614967e18f7272a49075273bb7615bb3a21026d950fcb75ba788fdde30a31f730bc638a321b3f9fe72040bda3f00d51022532edfb6e758d27afb15bc93b22238b815831a22ecf4550bc949aa5aa55dab2f14d8d1d722533cae0e2ceae2cd45412e9c82cdc9f995bc819afeed962eeb51e47c41de98d6298088a6a2a71b591394df738dd0904c8657c4c275676d5368a6fac48286ddfe39081bf59d873cbfaf9b0568bd444cd24f0310933acd900cae82d975f69426875505a3673eb41804f9304b803dabc813b945b392d1ab80eee3c1cb33451f58a8433b75d4642af092fcc112827e4a875208cd64fc5a49282b56f769a8ae521d22bf41c0951a14f4d35254a6298a3586766470d0edb9d1ff5778166a2cd7237f21a0cbd354493a9b21d181099c75daaa209ebe5cc93a4f742990424a56bc8a84b276163d38d2a44feea1fcabb4a31de9847cdac340dcce798bd331836cbdadb2f95daea8606591a144b36d96f3d8935a9a8ad1adfc839289682a7c8f01b6d8dcd0fab48e0cb0edf79d865ccfd3ef482b966c66b29138004114b62fed58cf9c64a0d522791000dbd05ccf87e9b949229bfd07aed5290b3166cb063db421e2351c892c5729e89eb799d17ecfe29c2d6a88f980bf186a3184d37acc0acc083348ae38de2b77f179770f41c2870e6c5669de109af8cc47e7fec835a482164b58036b9c2a43277b1bb490df364f52923d48b15423a8ba53d165d6e6e01949a59eb3233cb38b02ea771a935843cfa43b6fde58a51944f35efd62fef3ff5f5a6f1bce805b0cde0eb1a3265f943d88c0b147b7b954a2080c2f83e45cec4cb7134d8fb3d1ab80a94b75ab08645d6664e32a66ab454e54f37c67fddfa247853c71cd4d348fb53c4529e40363287badc1bae85015d991e156a796520c87b8950850343b22fc3cd5d628455df660958c383976f13c2d440142582a702e38a763d0b7ccc3d0b8875c95a79232aac8ac0baa1309757defcd76766ca992294c7f98c84e068e2de6fba66497f3873c27b6a057617cc6890a2dd793a3819ff0830be2ecb8c222e37932ff935913f20ceaf61ed46b3514fa00b60e06128c804ae4ab2e3a62646dc10b780f8364b0e708de4ec9463397c0d7446f2cdcc124ada890bbc26c62f9264b49650ee13859608c9b993650376d42687c639a2f0119e902d990257bef4a9a4ef39597abb89589adc9ad4631aec643ad6ec224fa1ee8c13fd38d3d21301aa18367b7c0df640d9faf7fb8218dc0c42ebb05f87eebd540e3ee48e9ce88fd8766e53cb6f4a7ceaf82aa8441bd2e54980a2826382595b652ca22de8d927756bc28af79c39e83c6c68b05744dc693a0f8edd2026d0e219423e47be44622211892e4459e9cfbd32ec71ed316a29ea2741eed48142661fe954849eec612dda221e6336284f40361dcd92e94a271365a5253ad9781a2f1862a7cdeb16eace208aa5d1229c7c35da1cd7db56918a92420baa5137bc41562616472e40434dbf93fbe93d95764d7234f6c6133c3d586c2b2d180887c5744141f7c16a242d808924df3814506253e0e3f06a3c47913dd4637a72f024a7acbc17be2ec9a05e5a6c0de3aadeceb69165ccc45fd7408b18dc9fb8f95d67537c2fbd59525c4f56363888236f8abbecdf6efa3b741f7efbf8be43cf6c0df785e653b0483d3c2bb2578c5faaec878dfb4e3e1577ad11b631</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-shrink">
-      <input class="hbe hbe-input-field hbe-input-field-shrink" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-shrink" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-shrink">请输入密码</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>Start-Page</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>扩容挂载点</title>
-    <url>/posts/2021-10-30/Extend-the-MountPoint/</url>
-    <content><![CDATA[<hr>
-<p><strong>情景</strong>：当服务器磁盘挂载的目录空间不足时，就需要对相应的挂载点进行扩容，以<code>/home</code>挂载点为例</p>
-<hr>
-<!--前言-->
-
-<h2 id="一、检查磁盘是否做过RAID"><a href="#一、检查磁盘是否做过RAID" class="headerlink" title="一、检查磁盘是否做过RAID"></a>一、检查磁盘是否做过RAID</h2><ol>
-<li>将硬盘插入到服务器可用的槽位</li>
-<li>重启服务器进入bios设置，依次选择<br><code>Chipset</code>–&gt;<code>PCH Configuration</code>–&gt;<code>PCH SATA Configuration</code>–&gt;<code>Configure SATA as</code>–&gt;<code>RAID</code>  确认待扩容的硬盘是否做过raid（<strong>如果没有做过raid，是有RAID这个配置选项的</strong>）</li>
-<li>若有磁盘配置有RAID选项则需要选择该选项。详细操作步骤可参考下列图片  </li>
-</ol>
-<span id="more"></span>
-
-<table>
-    <tr>
-        <td ><center>
-            <img width = '' height ='' src="http://images.jianmuzi.top/extend_mountpoint/set_bios_1.png"/>
-            <br/>图一  bios设置1
-        </center></td>
-        <td ><center>
-            <img width = '' height ='' src="http://images.jianmuzi.top/extend_mountpoint/set_bios_2.png"/>
-        <br/>图二 bios设置2
-        </center></td>
-    </tr>
-    <tr>
-        <td><center><img width = '' height ='' src="http://images.jianmuzi.top/extend_mountpoint/set_bios_3.png"/> <br/>图三 bios设置3 </center></td>
-        <td ><center><img width = '' height ='' src="http://images.jianmuzi.top/extend_mountpoint/set_bios_4.png"/> <br/>图四 bios设置4 </center> </td>
-    </tr>
-</table>
-
-
-<h2 id="二、磁盘分区、格式化、挂载操作"><a href="#二、磁盘分区、格式化、挂载操作" class="headerlink" title="二、磁盘分区、格式化、挂载操作"></a>二、磁盘分区、格式化、挂载操作</h2><h3 id="1-用root用户登录系统"><a href="#1-用root用户登录系统" class="headerlink" title="1. 用root用户登录系统"></a>1. 用root用户登录系统</h3><h3 id="2-查看系统是否识别出新加的硬盘"><a href="#2-查看系统是否识别出新加的硬盘" class="headerlink" title="2. 查看系统是否识别出新加的硬盘"></a>2. 查看系统是否识别出新加的硬盘</h3><p>&emsp; &#8195; 使用<code>lsblk</code>（list block，即用于列出所有可用块设备信息，而且还能显示他们之间的依赖关系），如下图所示  </p>
-<div align="center"> 
-<img src="http://images.jianmuzi.top/extend_mountpoint/lsblk_new_disk.png" width = 600 height = 240 /> 
-<br/> 图5 识别新硬盘
-</div>
-
-
-<h3 id="3-磁盘分区"><a href="#3-磁盘分区" class="headerlink" title="3.磁盘分区"></a>3.磁盘分区</h3><p><strong>分区说明</strong>：<code>fdsik</code>只支持2T硬盘的分区，如果硬盘是2T以上的，分区要用<code>parted</code>。  </p>
-<h4 id="1）使用fdisk命令分区（硬盘容量小于等于2T）"><a href="#1）使用fdisk命令分区（硬盘容量小于等于2T）" class="headerlink" title="1）使用fdisk命令分区（硬盘容量小于等于2T）"></a>1）使用fdisk命令分区（硬盘容量小于等于2T）</h4><p>&emsp;&emsp; a. 输入<code>fdisk /dev/sdb </code>（对新加磁盘sdb进行分区）<br>&emsp;&emsp; b. 后续Command 依次输入：<code>n</code>(新建一个分区)–&gt;<code>p</code>(选择主分区)–&gt;<code>1</code>(选择分区号)–&gt;直接回车(表示使用默认起始扇区)–&gt;直接回车(不设置结束扇区，则默认使用全部磁盘)–&gt;<code>t</code>(改磁盘类型)–&gt;<code>1</code>(选分区，若可选则选)–&gt;<code>8e</code>(将磁盘设置为LVM模式)–&gt;<code>p</code>(显示磁盘信息)–&gt;<code>w</code>(使前面的操作生效并退出)  </p>
-<p style="text-indent:2em"> c. 详细操作可参照下列图片 </p>
-
-<center>
-    <img src="http://images.jianmuzi.top/extend_mountpoint/fdisk_1.png"/> 
-    <img src="http://images.jianmuzi.top/extend_mountpoint/fdisk_2.png"/>
-    <br/> 图6  fdisk分区
-</center>
-
-<p>&emsp;&emsp; d. #<code>lsblk</code>(查看分区后的块设备信息）</p>
-<div align="center">
-    <br/>
-    <img width = '' height= '' src="http://images.jianmuzi.top/extend_mountpoint/lsblk_parted.png"/>
-    <br/>图7 检查磁盘新分区
-</div>
-
-<h4 id="2）使用parted命令分区（不论硬盘容量大小）"><a href="#2）使用parted命令分区（不论硬盘容量大小）" class="headerlink" title="2）使用parted命令分区（不论硬盘容量大小）"></a>2）使用parted命令分区（不论硬盘容量大小）</h4><p>&emsp;&emsp; a. 输入<code>parted /dev/sdb </code>（对新加磁盘sdb进行分区）<br>&emsp;&emsp; b. 依次输入：<code>p</code>(查看硬盘信息)–&gt;<code>mklabel gpt</code>(创建gpt分区表) –&gt;<code>y</code>(warning数据删除) –&gt;<code>mkpart</code>(创建分区) –&gt;<code>sdb1</code>(输入分区名)–&gt;<code>xfs</code>(文件系统类型) –&gt;<code>0</code>(起始位置) –&gt;硬盘容量大小(终止位置) –&gt;<code>I</code>(Ignore，忽视warning) –&gt;<code>p</code>(查看硬盘信息)  </p>
-<p style="text-indent:2em"> c. 详细操作可参照下列图片 </p>
-
-<div align="center"> 
-    <img src="http://images.jianmuzi.top/extend_mountpoint/parted_1.png"
-     width =  height =  /> 
-    <img src="http://images.jianmuzi.top/extend_mountpoint/parted_2.png" width = '' height = '' />
-    <br/> 图8 parted分区
-</div>
-
-<p>&emsp;&emsp; d. # <code>lsblk</code>(查看分区后的块设备信息）</p>
-<center>
-    <br/>
-    <img src="http://images.jianmuzi.top/extend_mountpoint/lsblk_parted.png"/>
-    <br/>图9 检查磁盘新分区
-</center>
-
-<h3 id="4-将新增的分区创建为物理卷"><a href="#4-将新增的分区创建为物理卷" class="headerlink" title="4.将新增的分区创建为物理卷"></a>4.将新增的分区创建为物理卷</h3><p>&emsp;&emsp; a. # <code>pvcreate /dev/sdb1</code> (新增物理卷)<br>&emsp;&emsp; b. # <code>pvdisplay</code> （查看物理卷信息，见下图）</p>
-<center>
-    <img src="http://images.jianmuzi.top/extend_mountpoint/pvcreate_pvdisplay_new.png" width = '' height = '550'/>
-    <br/>
-</center>
-
-<h3 id="5-扩容-home所挂载分区对应的逻辑卷（LV）"><a href="#5-扩容-home所挂载分区对应的逻辑卷（LV）" class="headerlink" title="5. 扩容/home所挂载分区对应的逻辑卷（LV）"></a>5. 扩容/home所挂载分区对应的逻辑卷（LV）</h3><h4 id="1）查询-home所挂载的磁盘分区"><a href="#1）查询-home所挂载的磁盘分区" class="headerlink" title="1）查询/home所挂载的磁盘分区"></a>1）查询/home所挂载的磁盘分区</h4><p>&emsp;&emsp; # <code>lsblk -ip</code> （结果如下图）</p>
-<center>
-    <img src="http://images.jianmuzi.top/extend_mountpoint/lsblk_ip.png" width = '' height = ''/>
-</center>
-
-<p>由上图可知<code>/home</code>挂载到了<code>/dev/mapper/centos-home</code>分区上  </p>
-<h4 id="2）查询该磁盘分区所对应的LV（逻辑卷）"><a href="#2）查询该磁盘分区所对应的LV（逻辑卷）" class="headerlink" title="2）查询该磁盘分区所对应的LV（逻辑卷）"></a>2）查询该磁盘分区所对应的LV（逻辑卷）</h4><p>&emsp;&emsp; # <code>lvdisplay /dev/mapper/centos-home</code> （结果见下图）</p>
-<center>
-    <img src="http://images.jianmuzi.top/extend_mountpoint/lvdisplay_home_1.png" width = '' height = ''/>
-</center>
-
-<p>由上图可知磁盘分区<code>/dev/mapper/centos-home</code>所在逻辑卷为<code>home</code>，所在卷组为<code>centos</code>，现在就知道了，我们待会要扩容的卷组以及逻辑卷了。</p>
-<h4 id="3）查询卷组信息（新增物理卷前）"><a href="#3）查询卷组信息（新增物理卷前）" class="headerlink" title="3）查询卷组信息（新增物理卷前）"></a>3）查询卷组信息（新增物理卷前）</h4><p>&emsp;&emsp; # <code>vgdisplay centos</code>（结果见下图）</p>
-<center>
-    <img src="http://images.jianmuzi.top/extend_mountpoint/vgdisplay_centos_1.png" width = '700' height = ''/>
-</center>
-
-<h4 id="4）将新增物理卷（-dev-sdb1）扩展至卷组centos"><a href="#4）将新增物理卷（-dev-sdb1）扩展至卷组centos" class="headerlink" title="4）将新增物理卷（/dev/sdb1）扩展至卷组centos"></a>4）将新增物理卷（/dev/sdb1）扩展至卷组centos</h4><p>&emsp;&emsp; a. # <code>vgextend centos /dev/sdb1</code> (扩展centos卷组)<br>&emsp;&emsp; b. # <code>pvdisplay centos</code> (结果见下图)  </p>
-<center>
-    <img src="http://images.jianmuzi.top/extend_mountpoint/vgextend_pvdisplay_centos.png" width = '700' height = ''/>
-</center>  
-
-<p>&emsp;&emsp; c. # <code>vgdisplay</code> （结果见下图）</p>
-<center>  
-    <img src="http://images.jianmuzi.top/extend_mountpoint/vgdisplay_centos_2.png" width = '700' height = ''/>
-</center>  
-至此，我们已经实现了home逻辑卷对应的centos卷组的扩容。
-
-<h4 id="5-将centos卷组中扩容得到的空间分配给指定逻辑卷"><a href="#5-将centos卷组中扩容得到的空间分配给指定逻辑卷" class="headerlink" title="5) 将centos卷组中扩容得到的空间分配给指定逻辑卷"></a>5) 将centos卷组中扩容得到的空间分配给指定逻辑卷</h4><p>&emsp;&emsp; a. # <code>lvdisplay /dev/centos/home</code> （LV扩容前，先查看逻辑卷home的容量）</p>
-<center>  
-    <img src="http://images.jianmuzi.top/extend_mountpoint/lvdisplay_home_2.png" width = '700' height = ''/>
-</center>
-
-<p>&emsp;&emsp; b. # <code>lvextend -l +100%FREE /dev/centos/home</code> （扩容逻辑卷home）</p>
-<p>&emsp;&emsp; c. # <code>lvdisplay /dev/centos/home</code> （与LV扩容前对比）  </p>
-<center>  
-    <img src="http://images.jianmuzi.top/extend_mountpoint/lvextend_lvdisplay_home.png" width = '700' height = ''/>
-</center>
-
-<h3 id="6-同步LV容量到文件系统"><a href="#6-同步LV容量到文件系统" class="headerlink" title="6. 同步LV容量到文件系统"></a>6. 同步LV容量到文件系统</h3><p>&emsp;&emsp; a. # <code>df -h</code> （查看文件系统的使用情况）</p>
-<center>  
-    <img src="http://images.jianmuzi.top/extend_mountpoint/df_h_1.png" width = '700' height = ''/>
-</center>
-
-<p>可以看到/home挂载点的容量并没有增加，这是因为目前还只是扩容了LV，但是并未扩容其对应的文件系统，故还需要增加对应文件系统的容量。</p>
-<p>&emsp;&emsp; b. # <code>cat /etc/fstab</code>（确认/home的文件系统类型）  </p>
-<center>
-    <img src="http://images.jianmuzi.top/extend_mountpoint/cat_fstab.png" width = '700' height = ''/>
-</center>  
-
-<p>可以看出/home挂载点对应的文件系统类型为xfs类型，故使用xfs_growfs工具对其进行扩容，若是其他文件系统类型，需要使用对应的工具扩容文件系统，如ext4文件系统则要使用resize2fs工具。</p>
-<p>&emsp;&emsp; c. # <code>xfs_growfs /dev/mapper/centos-home</code>（同步LV容量到xfs文件系统）  </p>
-<p>&emsp;&emsp; d. # <code>df -h</code> （查看/home是否已扩容）  </p>
-<center>  
-    <img src="http://images.jianmuzi.top/extend_mountpoint/df_h_2.png" width = '700' height = ''/>
-</center>  
-
-<p>至此，我们就实现了对指定挂载点/home的扩容。</p>
-<h2 id="三、章末补充"><a href="#三、章末补充" class="headerlink" title="三、章末补充"></a>三、章末补充</h2><h3 id="一）取消扩容（以下操作很危险，会影响服务器中调用-home目录的服务进程）"><a href="#一）取消扩容（以下操作很危险，会影响服务器中调用-home目录的服务进程）" class="headerlink" title="一）取消扩容（以下操作很危险，会影响服务器中调用/home目录的服务进程）"></a>一）取消扩容（以下操作很危险，会影响服务器中调用/home目录的服务进程）</h3><p><strong>目的</strong>：将磁盘sdb扩容到home逻辑卷的容量释放，实现centos磁盘空间重新分配。<br>由于xfs文件系统不能缩小空间，所以只能将/home先卸载，移除新磁盘物理卷移出centos卷组，为/home重建新的逻辑卷，再格式化，并挂载</p>
-<h4 id="1•-备份-home目录下的文件"><a href="#1•-备份-home目录下的文件" class="headerlink" title="1• 备份 /home目录下的文件"></a>1• 备份 /home目录下的文件</h4><blockquote>
-<p># <code>tar -czvf /root/home.tgz -C /home .</code></p>
-</blockquote>
-<h4 id="2•-查看备份内容的完整性"><a href="#2•-查看备份内容的完整性" class="headerlink" title="2• 查看备份内容的完整性"></a>2• 查看备份内容的完整性</h4><blockquote>
-<p># <code>tar -tvf /root/home.tgz</code></p>
-</blockquote>
-<h4 id="3•-取消挂载-home"><a href="#3•-取消挂载-home" class="headerlink" title="3• 取消挂载/home"></a>3• 取消挂载/home</h4><blockquote>
-<p># <code>umount /dev/mapper/centos-home</code><br># 有可能有target is busy错误，使用<code>umount -l /dev/mapper/centos-home</code>， l表示lazy</p>
-</blockquote>
-<h4 id="4•-移除home逻辑卷"><a href="#4•-移除home逻辑卷" class="headerlink" title="4• 移除home逻辑卷"></a>4• 移除home逻辑卷</h4><blockquote>
-<p># <code>lvremove /dev/mapper/centos-home</code>  # 有可能有Logical volume centos/home contains a filesystem in use.<br># 则使用<code>fuser -m -v -f -k /home</code> 关闭所有home进程（非常危险）</p>
-</blockquote>
-<h4 id="5•-将物理卷sdb1移出centos卷组"><a href="#5•-将物理卷sdb1移出centos卷组" class="headerlink" title="5• 将物理卷sdb1移出centos卷组"></a>5• 将物理卷sdb1移出centos卷组</h4><blockquote>
-<p># <code>vgreduce centos /dev/sdb1</code></p>
-</blockquote>
-<h4 id="6•-为-home重建新的逻辑卷，格式化，并挂载"><a href="#6•-为-home重建新的逻辑卷，格式化，并挂载" class="headerlink" title="6• 为/home重建新的逻辑卷，格式化，并挂载"></a>6• 为/home重建新的逻辑卷，格式化，并挂载</h4><blockquote>
-<p># <code>lvcreate -l +100%FREE -n home centos</code> #重建home逻辑卷<br># <code>mkfs.xfs /dev/centos/home</code>  #格式化为xfs文件系统<br># <code>mount /dev/mapper/centos-home</code>  #将/home挂载出来</p>
-</blockquote>
-<h4 id="7•-验证磁盘sdb空间是否释放并且-home是否重新挂载成功"><a href="#7•-验证磁盘sdb空间是否释放并且-home是否重新挂载成功" class="headerlink" title="7• 验证磁盘sdb空间是否释放并且/home是否重新挂载成功"></a>7• 验证磁盘sdb空间是否释放并且/home是否重新挂载成功</h4><blockquote>
-<p># <code>lsblk</code> #查看块设备信息<br># <code>df -h</code> #查看文件系统信息</p>
-</blockquote>
-<h4 id="8•-恢复备份"><a href="#8•-恢复备份" class="headerlink" title="8• 恢复备份"></a>8• 恢复备份</h4><blockquote>
-<p># <code>tar -xzvf /root/home.tgz -C /home</code></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Extend_MountPoint</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>测试-abbrlink</title>
     <url>/posts/2021-11-08/test-abbrlink/</url>
     <content><![CDATA[<!--前言-->
@@ -405,32 +431,6 @@
       <tags>
         <tag>abbrlink</tag>
         <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>//archives/01/</url>
-    <content><![CDATA[<!--前言-->  
-<p>测试本页代码下载<br>设置永久链接permalink: archives/01，其中01不能带后缀</p>
-<p>测试代码高亮</p>
-<pre><code class="highlight bash">$ hexo new <span class="string">&quot;My New Post&quot;</span>
-
-$ hexo server
-
-$ hexo generate
-
-$ hexo deploy</code></pre>
-
-<span id="more"></span>
-
-
-<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
-      <categories>
-        <category>1</category>
-      </categories>
-      <tags>
-        <tag>name01</tag>
-        <tag>name02</tag>
       </tags>
   </entry>
   <entry>

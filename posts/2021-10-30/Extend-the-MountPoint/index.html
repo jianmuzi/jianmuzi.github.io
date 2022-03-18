@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.1">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/uploads/apple-touch-icon.png">
@@ -281,7 +281,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%A3%80%E6%9F%A5%E7%A3%81%E7%9B%98%E6%98%AF%E5%90%A6%E5%81%9A%E8%BF%87RAID"><span class="nav-text">一、检查磁盘是否做过RAID</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E3%80%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E3%80%81%E6%8C%82%E8%BD%BD%E6%93%8D%E4%BD%9C"><span class="nav-text">二、磁盘分区、格式化、挂载操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%94%A8root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F"><span class="nav-text">1. 用root用户登录系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E6%98%AF%E5%90%A6%E8%AF%86%E5%88%AB%E5%87%BA%E6%96%B0%E5%8A%A0%E7%9A%84%E7%A1%AC%E7%9B%98"><span class="nav-text">2. 查看系统是否识别出新加的硬盘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA"><span class="nav-text">3.磁盘分区</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%EF%BC%89%E4%BD%BF%E7%94%A8fdisk%E5%91%BD%E4%BB%A4%E5%88%86%E5%8C%BA%EF%BC%88%E7%A1%AC%E7%9B%98%E5%AE%B9%E9%87%8F%E5%B0%8F%E4%BA%8E%E7%AD%89%E4%BA%8E2T%EF%BC%89"><span class="nav-text">1）使用fdisk命令分区（硬盘容量小于等于2T）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%EF%BC%89%E4%BD%BF%E7%94%A8parted%E5%91%BD%E4%BB%A4%E5%88%86%E5%8C%BA%EF%BC%88%E4%B8%8D%E8%AE%BA%E7%A1%AC%E7%9B%98%E5%AE%B9%E9%87%8F%E5%A4%A7%E5%B0%8F%EF%BC%89"><span class="nav-text">2）使用parted命令分区（不论硬盘容量大小）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%B0%86%E6%96%B0%E5%A2%9E%E7%9A%84%E5%88%86%E5%8C%BA%E5%88%9B%E5%BB%BA%E4%B8%BA%E7%89%A9%E7%90%86%E5%8D%B7"><span class="nav-text">4.将新增的分区创建为物理卷</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%89%A9%E5%AE%B9-home%E6%89%80%E6%8C%82%E8%BD%BD%E5%88%86%E5%8C%BA%E5%AF%B9%E5%BA%94%E7%9A%84%E9%80%BB%E8%BE%91%E5%8D%B7%EF%BC%88LV%EF%BC%89"><span class="nav-text">5. 扩容&#x2F;home所挂载分区对应的逻辑卷（LV）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%EF%BC%89%E6%9F%A5%E8%AF%A2-home%E6%89%80%E6%8C%82%E8%BD%BD%E7%9A%84%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA"><span class="nav-text">1）查询&#x2F;home所挂载的磁盘分区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%EF%BC%89%E6%9F%A5%E8%AF%A2%E8%AF%A5%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E6%89%80%E5%AF%B9%E5%BA%94%E7%9A%84LV%EF%BC%88%E9%80%BB%E8%BE%91%E5%8D%B7%EF%BC%89"><span class="nav-text">2）查询该磁盘分区所对应的LV（逻辑卷）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3%EF%BC%89%E6%9F%A5%E8%AF%A2%E5%8D%B7%E7%BB%84%E4%BF%A1%E6%81%AF%EF%BC%88%E6%96%B0%E5%A2%9E%E7%89%A9%E7%90%86%E5%8D%B7%E5%89%8D%EF%BC%89"><span class="nav-text">3）查询卷组信息（新增物理卷前）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4%EF%BC%89%E5%B0%86%E6%96%B0%E5%A2%9E%E7%89%A9%E7%90%86%E5%8D%B7%EF%BC%88-dev-sdb1%EF%BC%89%E6%89%A9%E5%B1%95%E8%87%B3%E5%8D%B7%E7%BB%84centos"><span class="nav-text">4）将新增物理卷（&#x2F;dev&#x2F;sdb1）扩展至卷组centos</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-%E5%B0%86centos%E5%8D%B7%E7%BB%84%E4%B8%AD%E6%89%A9%E5%AE%B9%E5%BE%97%E5%88%B0%E7%9A%84%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D%E7%BB%99%E6%8C%87%E5%AE%9A%E9%80%BB%E8%BE%91%E5%8D%B7"><span class="nav-text">5) 将centos卷组中扩容得到的空间分配给指定逻辑卷</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%90%8C%E6%AD%A5LV%E5%AE%B9%E9%87%8F%E5%88%B0%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="nav-text">6. 同步LV容量到文件系统</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%AB%A0%E6%9C%AB%E8%A1%A5%E5%85%85"><span class="nav-text">三、章末补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%EF%BC%89%E5%8F%96%E6%B6%88%E6%89%A9%E5%AE%B9%EF%BC%88%E4%BB%A5%E4%B8%8B%E6%93%8D%E4%BD%9C%E5%BE%88%E5%8D%B1%E9%99%A9%EF%BC%8C%E4%BC%9A%E5%BD%B1%E5%93%8D%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E8%B0%83%E7%94%A8-home%E7%9B%AE%E5%BD%95%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%BF%9B%E7%A8%8B%EF%BC%89"><span class="nav-text">一）取消扩容（以下操作很危险，会影响服务器中调用&#x2F;home目录的服务进程）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%E2%80%A2-%E5%A4%87%E4%BB%BD-home%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6"><span class="nav-text">1• 备份 &#x2F;home目录下的文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%E2%80%A2-%E6%9F%A5%E7%9C%8B%E5%A4%87%E4%BB%BD%E5%86%85%E5%AE%B9%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="nav-text">2• 查看备份内容的完整性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3%E2%80%A2-%E5%8F%96%E6%B6%88%E6%8C%82%E8%BD%BD-home"><span class="nav-text">3• 取消挂载&#x2F;home</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4%E2%80%A2-%E7%A7%BB%E9%99%A4home%E9%80%BB%E8%BE%91%E5%8D%B7"><span class="nav-text">4• 移除home逻辑卷</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5%E2%80%A2-%E5%B0%86%E7%89%A9%E7%90%86%E5%8D%B7sdb1%E7%A7%BB%E5%87%BAcentos%E5%8D%B7%E7%BB%84"><span class="nav-text">5• 将物理卷sdb1移出centos卷组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6%E2%80%A2-%E4%B8%BA-home%E9%87%8D%E5%BB%BA%E6%96%B0%E7%9A%84%E9%80%BB%E8%BE%91%E5%8D%B7%EF%BC%8C%E6%A0%BC%E5%BC%8F%E5%8C%96%EF%BC%8C%E5%B9%B6%E6%8C%82%E8%BD%BD"><span class="nav-text">6• 为&#x2F;home重建新的逻辑卷，格式化，并挂载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7%E2%80%A2-%E9%AA%8C%E8%AF%81%E7%A3%81%E7%9B%98sdb%E7%A9%BA%E9%97%B4%E6%98%AF%E5%90%A6%E9%87%8A%E6%94%BE%E5%B9%B6%E4%B8%94-home%E6%98%AF%E5%90%A6%E9%87%8D%E6%96%B0%E6%8C%82%E8%BD%BD%E6%88%90%E5%8A%9F"><span class="nav-text">7• 验证磁盘sdb空间是否释放并且&#x2F;home是否重新挂载成功</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8%E2%80%A2-%E6%81%A2%E5%A4%8D%E5%A4%87%E4%BB%BD"><span class="nav-text">8• 恢复备份</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%A3%80%E6%9F%A5%E7%A3%81%E7%9B%98%E6%98%AF%E5%90%A6%E5%81%9A%E8%BF%87RAID"><span class="nav-text">一、检查磁盘是否做过RAID</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E3%80%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E3%80%81%E6%8C%82%E8%BD%BD%E6%93%8D%E4%BD%9C"><span class="nav-text">二、磁盘分区、格式化、挂载操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%94%A8root%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F"><span class="nav-text">1. 用root用户登录系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E6%98%AF%E5%90%A6%E8%AF%86%E5%88%AB%E5%87%BA%E6%96%B0%E5%8A%A0%E7%9A%84%E7%A1%AC%E7%9B%98"><span class="nav-text">2. 查看系统是否识别出新加的硬盘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA"><span class="nav-text">3.磁盘分区</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%EF%BC%89%E4%BD%BF%E7%94%A8fdisk%E5%91%BD%E4%BB%A4%E5%88%86%E5%8C%BA%EF%BC%88%E7%A1%AC%E7%9B%98%E5%AE%B9%E9%87%8F%E5%B0%8F%E4%BA%8E%E7%AD%89%E4%BA%8E2T%EF%BC%89"><span class="nav-text">1）使用fdisk命令分区（硬盘容量小于等于2T）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%EF%BC%89%E4%BD%BF%E7%94%A8parted%E5%91%BD%E4%BB%A4%E5%88%86%E5%8C%BA%EF%BC%88%E4%B8%8D%E8%AE%BA%E7%A1%AC%E7%9B%98%E5%AE%B9%E9%87%8F%E5%A4%A7%E5%B0%8F%EF%BC%89"><span class="nav-text">2）使用parted命令分区（不论硬盘容量大小）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%B0%86%E6%96%B0%E5%A2%9E%E7%9A%84%E5%88%86%E5%8C%BA%E5%88%9B%E5%BB%BA%E4%B8%BA%E7%89%A9%E7%90%86%E5%8D%B7"><span class="nav-text">4.将新增的分区创建为物理卷</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%89%A9%E5%AE%B9-x2F-home%E6%89%80%E6%8C%82%E8%BD%BD%E5%88%86%E5%8C%BA%E5%AF%B9%E5%BA%94%E7%9A%84%E9%80%BB%E8%BE%91%E5%8D%B7%EF%BC%88LV%EF%BC%89"><span class="nav-text">5. 扩容&#x2F;home所挂载分区对应的逻辑卷（LV）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%EF%BC%89%E6%9F%A5%E8%AF%A2-x2F-home%E6%89%80%E6%8C%82%E8%BD%BD%E7%9A%84%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA"><span class="nav-text">1）查询&#x2F;home所挂载的磁盘分区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%EF%BC%89%E6%9F%A5%E8%AF%A2%E8%AF%A5%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E6%89%80%E5%AF%B9%E5%BA%94%E7%9A%84LV%EF%BC%88%E9%80%BB%E8%BE%91%E5%8D%B7%EF%BC%89"><span class="nav-text">2）查询该磁盘分区所对应的LV（逻辑卷）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3%EF%BC%89%E6%9F%A5%E8%AF%A2%E5%8D%B7%E7%BB%84%E4%BF%A1%E6%81%AF%EF%BC%88%E6%96%B0%E5%A2%9E%E7%89%A9%E7%90%86%E5%8D%B7%E5%89%8D%EF%BC%89"><span class="nav-text">3）查询卷组信息（新增物理卷前）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4%EF%BC%89%E5%B0%86%E6%96%B0%E5%A2%9E%E7%89%A9%E7%90%86%E5%8D%B7%EF%BC%88-x2F-dev-x2F-sdb1%EF%BC%89%E6%89%A9%E5%B1%95%E8%87%B3%E5%8D%B7%E7%BB%84centos"><span class="nav-text">4）将新增物理卷（&#x2F;dev&#x2F;sdb1）扩展至卷组centos</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-%E5%B0%86centos%E5%8D%B7%E7%BB%84%E4%B8%AD%E6%89%A9%E5%AE%B9%E5%BE%97%E5%88%B0%E7%9A%84%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D%E7%BB%99%E6%8C%87%E5%AE%9A%E9%80%BB%E8%BE%91%E5%8D%B7"><span class="nav-text">5) 将centos卷组中扩容得到的空间分配给指定逻辑卷</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%90%8C%E6%AD%A5LV%E5%AE%B9%E9%87%8F%E5%88%B0%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="nav-text">6. 同步LV容量到文件系统</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%AB%A0%E6%9C%AB%E8%A1%A5%E5%85%85"><span class="nav-text">三、章末补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%EF%BC%89%E5%8F%96%E6%B6%88%E6%89%A9%E5%AE%B9%EF%BC%88%E4%BB%A5%E4%B8%8B%E6%93%8D%E4%BD%9C%E5%BE%88%E5%8D%B1%E9%99%A9%EF%BC%8C%E4%BC%9A%E5%BD%B1%E5%93%8D%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E8%B0%83%E7%94%A8-x2F-home%E7%9B%AE%E5%BD%95%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%BF%9B%E7%A8%8B%EF%BC%89"><span class="nav-text">一）取消扩容（以下操作很危险，会影响服务器中调用&#x2F;home目录的服务进程）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%E2%80%A2-%E5%A4%87%E4%BB%BD-x2F-home%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6"><span class="nav-text">1• 备份 &#x2F;home目录下的文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%E2%80%A2-%E6%9F%A5%E7%9C%8B%E5%A4%87%E4%BB%BD%E5%86%85%E5%AE%B9%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="nav-text">2• 查看备份内容的完整性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3%E2%80%A2-%E5%8F%96%E6%B6%88%E6%8C%82%E8%BD%BD-x2F-home"><span class="nav-text">3• 取消挂载&#x2F;home</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4%E2%80%A2-%E7%A7%BB%E9%99%A4home%E9%80%BB%E8%BE%91%E5%8D%B7"><span class="nav-text">4• 移除home逻辑卷</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5%E2%80%A2-%E5%B0%86%E7%89%A9%E7%90%86%E5%8D%B7sdb1%E7%A7%BB%E5%87%BAcentos%E5%8D%B7%E7%BB%84"><span class="nav-text">5• 将物理卷sdb1移出centos卷组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6%E2%80%A2-%E4%B8%BA-x2F-home%E9%87%8D%E5%BB%BA%E6%96%B0%E7%9A%84%E9%80%BB%E8%BE%91%E5%8D%B7%EF%BC%8C%E6%A0%BC%E5%BC%8F%E5%8C%96%EF%BC%8C%E5%B9%B6%E6%8C%82%E8%BD%BD"><span class="nav-text">6• 为&#x2F;home重建新的逻辑卷，格式化，并挂载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7%E2%80%A2-%E9%AA%8C%E8%AF%81%E7%A3%81%E7%9B%98sdb%E7%A9%BA%E9%97%B4%E6%98%AF%E5%90%A6%E9%87%8A%E6%94%BE%E5%B9%B6%E4%B8%94-x2F-home%E6%98%AF%E5%90%A6%E9%87%8D%E6%96%B0%E6%8C%82%E8%BD%BD%E6%88%90%E5%8A%9F"><span class="nav-text">7• 验证磁盘sdb空间是否释放并且&#x2F;home是否重新挂载成功</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8%E2%80%A2-%E6%81%A2%E5%A4%8D%E5%A4%87%E4%BB%BD"><span class="nav-text">8• 恢复备份</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -850,21 +850,6 @@ if(canvas.getContext){
       <span class="post-meta-item-text">阅读次数：</span>
       <span id="busuanzi_value_page_pv"></span>
     </span>
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>3k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
-    </span>
 </div>
 
         </div>
@@ -883,7 +868,7 @@ if(canvas.getContext){
 <h2 id="一、检查磁盘是否做过RAID"><a href="#一、检查磁盘是否做过RAID" class="headerlink" title="一、检查磁盘是否做过RAID"></a>一、检查磁盘是否做过RAID</h2><ol>
 <li>将硬盘插入到服务器可用的槽位</li>
 <li>重启服务器进入bios设置，依次选择<br><code>Chipset</code>–&gt;<code>PCH Configuration</code>–&gt;<code>PCH SATA Configuration</code>–&gt;<code>Configure SATA as</code>–&gt;<code>RAID</code>  确认待扩容的硬盘是否做过raid（<strong>如果没有做过raid，是有RAID这个配置选项的</strong>）</li>
-<li>若有磁盘配置有RAID选项则需要选择该选项。详细操作步骤可参考下列图片  </li>
+<li>若有磁盘配置有RAID选项则需要选择该选项。详细操作步骤可参考下列图片</li>
 </ol>
 <span id="more"></span>
 
@@ -905,7 +890,7 @@ if(canvas.getContext){
 </table>
 
 
-<h2 id="二、磁盘分区、格式化、挂载操作"><a href="#二、磁盘分区、格式化、挂载操作" class="headerlink" title="二、磁盘分区、格式化、挂载操作"></a>二、磁盘分区、格式化、挂载操作</h2><h3 id="1-用root用户登录系统"><a href="#1-用root用户登录系统" class="headerlink" title="1. 用root用户登录系统"></a>1. 用root用户登录系统</h3><h3 id="2-查看系统是否识别出新加的硬盘"><a href="#2-查看系统是否识别出新加的硬盘" class="headerlink" title="2. 查看系统是否识别出新加的硬盘"></a>2. 查看系统是否识别出新加的硬盘</h3><p>&emsp; &#8195; 使用<code>lsblk</code>（list block，即用于列出所有可用块设备信息，而且还能显示他们之间的依赖关系），如下图所示  </p>
+<h2 id="二、磁盘分区、格式化、挂载操作"><a href="#二、磁盘分区、格式化、挂载操作" class="headerlink" title="二、磁盘分区、格式化、挂载操作"></a>二、磁盘分区、格式化、挂载操作</h2><h3 id="1-用root用户登录系统"><a href="#1-用root用户登录系统" class="headerlink" title="1. 用root用户登录系统"></a>1. 用root用户登录系统</h3><h3 id="2-查看系统是否识别出新加的硬盘"><a href="#2-查看系统是否识别出新加的硬盘" class="headerlink" title="2. 查看系统是否识别出新加的硬盘"></a>2. 查看系统是否识别出新加的硬盘</h3><p>&amp;emsp; &amp;#8195; 使用<code>lsblk</code>（list block，即用于列出所有可用块设备信息，而且还能显示他们之间的依赖关系），如下图所示  </p>
 <div align="center"> 
 <img src="http://images.jianmuzi.top/extend_mountpoint/lsblk_new_disk.png" width = 600 height = 240 /> 
 <br/> 图5 识别新硬盘
@@ -913,7 +898,7 @@ if(canvas.getContext){
 
 
 <h3 id="3-磁盘分区"><a href="#3-磁盘分区" class="headerlink" title="3.磁盘分区"></a>3.磁盘分区</h3><p><strong>分区说明</strong>：<code>fdsik</code>只支持2T硬盘的分区，如果硬盘是2T以上的，分区要用<code>parted</code>。  </p>
-<h4 id="1）使用fdisk命令分区（硬盘容量小于等于2T）"><a href="#1）使用fdisk命令分区（硬盘容量小于等于2T）" class="headerlink" title="1）使用fdisk命令分区（硬盘容量小于等于2T）"></a>1）使用fdisk命令分区（硬盘容量小于等于2T）</h4><p>&emsp;&emsp; a. 输入<code>fdisk /dev/sdb </code>（对新加磁盘sdb进行分区）<br>&emsp;&emsp; b. 后续Command 依次输入：<code>n</code>(新建一个分区)–&gt;<code>p</code>(选择主分区)–&gt;<code>1</code>(选择分区号)–&gt;直接回车(表示使用默认起始扇区)–&gt;直接回车(不设置结束扇区，则默认使用全部磁盘)–&gt;<code>t</code>(改磁盘类型)–&gt;<code>1</code>(选分区，若可选则选)–&gt;<code>8e</code>(将磁盘设置为LVM模式)–&gt;<code>p</code>(显示磁盘信息)–&gt;<code>w</code>(使前面的操作生效并退出)  </p>
+<h4 id="1）使用fdisk命令分区（硬盘容量小于等于2T）"><a href="#1）使用fdisk命令分区（硬盘容量小于等于2T）" class="headerlink" title="1）使用fdisk命令分区（硬盘容量小于等于2T）"></a>1）使用fdisk命令分区（硬盘容量小于等于2T）</h4><p>&amp;emsp;&amp;emsp; a. 输入<code>fdisk /dev/sdb </code>（对新加磁盘sdb进行分区）<br>&amp;emsp;&amp;emsp; b. 后续Command 依次输入：<code>n</code>(新建一个分区)–&gt;<code>p</code>(选择主分区)–&gt;<code>1</code>(选择分区号)–&gt;直接回车(表示使用默认起始扇区)–&gt;直接回车(不设置结束扇区，则默认使用全部磁盘)–&gt;<code>t</code>(改磁盘类型)–&gt;<code>1</code>(选分区，若可选则选)–&gt;<code>8e</code>(将磁盘设置为LVM模式)–&gt;<code>p</code>(显示磁盘信息)–&gt;<code>w</code>(使前面的操作生效并退出)  </p>
 <p style="text-indent:2em"> c. 详细操作可参照下列图片 </p>
 
 <center>
@@ -922,14 +907,14 @@ if(canvas.getContext){
     <br/> 图6  fdisk分区
 </center>
 
-<p>&emsp;&emsp; d. #<code>lsblk</code>(查看分区后的块设备信息）</p>
+<p>&amp;emsp;&amp;emsp; d. #<code>lsblk</code>(查看分区后的块设备信息）</p>
 <div align="center">
     <br/>
     <img width = '' height= '' src="http://images.jianmuzi.top/extend_mountpoint/lsblk_parted.png"/>
     <br/>图7 检查磁盘新分区
 </div>
 
-<h4 id="2）使用parted命令分区（不论硬盘容量大小）"><a href="#2）使用parted命令分区（不论硬盘容量大小）" class="headerlink" title="2）使用parted命令分区（不论硬盘容量大小）"></a>2）使用parted命令分区（不论硬盘容量大小）</h4><p>&emsp;&emsp; a. 输入<code>parted /dev/sdb </code>（对新加磁盘sdb进行分区）<br>&emsp;&emsp; b. 依次输入：<code>p</code>(查看硬盘信息)–&gt;<code>mklabel gpt</code>(创建gpt分区表) –&gt;<code>y</code>(warning数据删除) –&gt;<code>mkpart</code>(创建分区) –&gt;<code>sdb1</code>(输入分区名)–&gt;<code>xfs</code>(文件系统类型) –&gt;<code>0</code>(起始位置) –&gt;硬盘容量大小(终止位置) –&gt;<code>I</code>(Ignore，忽视warning) –&gt;<code>p</code>(查看硬盘信息)  </p>
+<h4 id="2）使用parted命令分区（不论硬盘容量大小）"><a href="#2）使用parted命令分区（不论硬盘容量大小）" class="headerlink" title="2）使用parted命令分区（不论硬盘容量大小）"></a>2）使用parted命令分区（不论硬盘容量大小）</h4><p>&amp;emsp;&amp;emsp; a. 输入<code>parted /dev/sdb </code>（对新加磁盘sdb进行分区）<br>&amp;emsp;&amp;emsp; b. 依次输入：<code>p</code>(查看硬盘信息)–&gt;<code>mklabel gpt</code>(创建gpt分区表) –&gt;<code>y</code>(warning数据删除) –&gt;<code>mkpart</code>(创建分区) –&gt;<code>sdb1</code>(输入分区名)–&gt;<code>xfs</code>(文件系统类型) –&gt;<code>0</code>(起始位置) –&gt;硬盘容量大小(终止位置) –&gt;<code>I</code>(Ignore，忽视warning) –&gt;<code>p</code>(查看硬盘信息)  </p>
 <p style="text-indent:2em"> c. 详细操作可参照下列图片 </p>
 
 <div align="center"> 
@@ -939,97 +924,97 @@ if(canvas.getContext){
     <br/> 图8 parted分区
 </div>
 
-<p>&emsp;&emsp; d. # <code>lsblk</code>(查看分区后的块设备信息）</p>
+<p>&amp;emsp;&amp;emsp; d. # <code>lsblk</code>(查看分区后的块设备信息）</p>
 <center>
     <br/>
     <img src="http://images.jianmuzi.top/extend_mountpoint/lsblk_parted.png"/>
     <br/>图9 检查磁盘新分区
 </center>
 
-<h3 id="4-将新增的分区创建为物理卷"><a href="#4-将新增的分区创建为物理卷" class="headerlink" title="4.将新增的分区创建为物理卷"></a>4.将新增的分区创建为物理卷</h3><p>&emsp;&emsp; a. # <code>pvcreate /dev/sdb1</code> (新增物理卷)<br>&emsp;&emsp; b. # <code>pvdisplay</code> （查看物理卷信息，见下图）</p>
+<h3 id="4-将新增的分区创建为物理卷"><a href="#4-将新增的分区创建为物理卷" class="headerlink" title="4.将新增的分区创建为物理卷"></a>4.将新增的分区创建为物理卷</h3><p>&amp;emsp;&amp;emsp; a. # <code>pvcreate /dev/sdb1</code> (新增物理卷)<br>&amp;emsp;&amp;emsp; b. # <code>pvdisplay</code> （查看物理卷信息，见下图）</p>
 <center>
     <img src="http://images.jianmuzi.top/extend_mountpoint/pvcreate_pvdisplay_new.png" width = '' height = '550'/>
     <br/>
 </center>
 
-<h3 id="5-扩容-home所挂载分区对应的逻辑卷（LV）"><a href="#5-扩容-home所挂载分区对应的逻辑卷（LV）" class="headerlink" title="5. 扩容/home所挂载分区对应的逻辑卷（LV）"></a>5. 扩容/home所挂载分区对应的逻辑卷（LV）</h3><h4 id="1）查询-home所挂载的磁盘分区"><a href="#1）查询-home所挂载的磁盘分区" class="headerlink" title="1）查询/home所挂载的磁盘分区"></a>1）查询/home所挂载的磁盘分区</h4><p>&emsp;&emsp; # <code>lsblk -ip</code> （结果如下图）</p>
+<h3 id="5-扩容-x2F-home所挂载分区对应的逻辑卷（LV）"><a href="#5-扩容-x2F-home所挂载分区对应的逻辑卷（LV）" class="headerlink" title="5. 扩容&#x2F;home所挂载分区对应的逻辑卷（LV）"></a>5. 扩容&#x2F;home所挂载分区对应的逻辑卷（LV）</h3><h4 id="1）查询-x2F-home所挂载的磁盘分区"><a href="#1）查询-x2F-home所挂载的磁盘分区" class="headerlink" title="1）查询&#x2F;home所挂载的磁盘分区"></a>1）查询&#x2F;home所挂载的磁盘分区</h4><p>&amp;emsp;&amp;emsp; # <code>lsblk -ip</code> （结果如下图）</p>
 <center>
     <img src="http://images.jianmuzi.top/extend_mountpoint/lsblk_ip.png" width = '' height = ''/>
 </center>
 
 <p>由上图可知<code>/home</code>挂载到了<code>/dev/mapper/centos-home</code>分区上  </p>
-<h4 id="2）查询该磁盘分区所对应的LV（逻辑卷）"><a href="#2）查询该磁盘分区所对应的LV（逻辑卷）" class="headerlink" title="2）查询该磁盘分区所对应的LV（逻辑卷）"></a>2）查询该磁盘分区所对应的LV（逻辑卷）</h4><p>&emsp;&emsp; # <code>lvdisplay /dev/mapper/centos-home</code> （结果见下图）</p>
+<h4 id="2）查询该磁盘分区所对应的LV（逻辑卷）"><a href="#2）查询该磁盘分区所对应的LV（逻辑卷）" class="headerlink" title="2）查询该磁盘分区所对应的LV（逻辑卷）"></a>2）查询该磁盘分区所对应的LV（逻辑卷）</h4><p>&amp;emsp;&amp;emsp; # <code>lvdisplay /dev/mapper/centos-home</code> （结果见下图）</p>
 <center>
     <img src="http://images.jianmuzi.top/extend_mountpoint/lvdisplay_home_1.png" width = '' height = ''/>
 </center>
 
 <p>由上图可知磁盘分区<code>/dev/mapper/centos-home</code>所在逻辑卷为<code>home</code>，所在卷组为<code>centos</code>，现在就知道了，我们待会要扩容的卷组以及逻辑卷了。</p>
-<h4 id="3）查询卷组信息（新增物理卷前）"><a href="#3）查询卷组信息（新增物理卷前）" class="headerlink" title="3）查询卷组信息（新增物理卷前）"></a>3）查询卷组信息（新增物理卷前）</h4><p>&emsp;&emsp; # <code>vgdisplay centos</code>（结果见下图）</p>
+<h4 id="3）查询卷组信息（新增物理卷前）"><a href="#3）查询卷组信息（新增物理卷前）" class="headerlink" title="3）查询卷组信息（新增物理卷前）"></a>3）查询卷组信息（新增物理卷前）</h4><p>&amp;emsp;&amp;emsp; # <code>vgdisplay centos</code>（结果见下图）</p>
 <center>
     <img src="http://images.jianmuzi.top/extend_mountpoint/vgdisplay_centos_1.png" width = '700' height = ''/>
 </center>
 
-<h4 id="4）将新增物理卷（-dev-sdb1）扩展至卷组centos"><a href="#4）将新增物理卷（-dev-sdb1）扩展至卷组centos" class="headerlink" title="4）将新增物理卷（/dev/sdb1）扩展至卷组centos"></a>4）将新增物理卷（/dev/sdb1）扩展至卷组centos</h4><p>&emsp;&emsp; a. # <code>vgextend centos /dev/sdb1</code> (扩展centos卷组)<br>&emsp;&emsp; b. # <code>pvdisplay centos</code> (结果见下图)  </p>
+<h4 id="4）将新增物理卷（-x2F-dev-x2F-sdb1）扩展至卷组centos"><a href="#4）将新增物理卷（-x2F-dev-x2F-sdb1）扩展至卷组centos" class="headerlink" title="4）将新增物理卷（&#x2F;dev&#x2F;sdb1）扩展至卷组centos"></a>4）将新增物理卷（&#x2F;dev&#x2F;sdb1）扩展至卷组centos</h4><p>&amp;emsp;&amp;emsp; a. # <code>vgextend centos /dev/sdb1</code> (扩展centos卷组)<br>&amp;emsp;&amp;emsp; b. # <code>pvdisplay centos</code> (结果见下图)  </p>
 <center>
     <img src="http://images.jianmuzi.top/extend_mountpoint/vgextend_pvdisplay_centos.png" width = '700' height = ''/>
 </center>  
 
-<p>&emsp;&emsp; c. # <code>vgdisplay</code> （结果见下图）</p>
+<p>&amp;emsp;&amp;emsp; c. # <code>vgdisplay</code> （结果见下图）</p>
 <center>  
     <img src="http://images.jianmuzi.top/extend_mountpoint/vgdisplay_centos_2.png" width = '700' height = ''/>
 </center>  
 至此，我们已经实现了home逻辑卷对应的centos卷组的扩容。
 
-<h4 id="5-将centos卷组中扩容得到的空间分配给指定逻辑卷"><a href="#5-将centos卷组中扩容得到的空间分配给指定逻辑卷" class="headerlink" title="5) 将centos卷组中扩容得到的空间分配给指定逻辑卷"></a>5) 将centos卷组中扩容得到的空间分配给指定逻辑卷</h4><p>&emsp;&emsp; a. # <code>lvdisplay /dev/centos/home</code> （LV扩容前，先查看逻辑卷home的容量）</p>
+<h4 id="5-将centos卷组中扩容得到的空间分配给指定逻辑卷"><a href="#5-将centos卷组中扩容得到的空间分配给指定逻辑卷" class="headerlink" title="5) 将centos卷组中扩容得到的空间分配给指定逻辑卷"></a>5) 将centos卷组中扩容得到的空间分配给指定逻辑卷</h4><p>&amp;emsp;&amp;emsp; a. # <code>lvdisplay /dev/centos/home</code> （LV扩容前，先查看逻辑卷home的容量）</p>
 <center>  
     <img src="http://images.jianmuzi.top/extend_mountpoint/lvdisplay_home_2.png" width = '700' height = ''/>
 </center>
 
-<p>&emsp;&emsp; b. # <code>lvextend -l +100%FREE /dev/centos/home</code> （扩容逻辑卷home）</p>
-<p>&emsp;&emsp; c. # <code>lvdisplay /dev/centos/home</code> （与LV扩容前对比）  </p>
+<p>&amp;emsp;&amp;emsp; b. # <code>lvextend -l +100%FREE /dev/centos/home</code> （扩容逻辑卷home）</p>
+<p>&amp;emsp;&amp;emsp; c. # <code>lvdisplay /dev/centos/home</code> （与LV扩容前对比）  </p>
 <center>  
     <img src="http://images.jianmuzi.top/extend_mountpoint/lvextend_lvdisplay_home.png" width = '700' height = ''/>
 </center>
 
-<h3 id="6-同步LV容量到文件系统"><a href="#6-同步LV容量到文件系统" class="headerlink" title="6. 同步LV容量到文件系统"></a>6. 同步LV容量到文件系统</h3><p>&emsp;&emsp; a. # <code>df -h</code> （查看文件系统的使用情况）</p>
+<h3 id="6-同步LV容量到文件系统"><a href="#6-同步LV容量到文件系统" class="headerlink" title="6. 同步LV容量到文件系统"></a>6. 同步LV容量到文件系统</h3><p>&amp;emsp;&amp;emsp; a. # <code>df -h</code> （查看文件系统的使用情况）</p>
 <center>  
     <img src="http://images.jianmuzi.top/extend_mountpoint/df_h_1.png" width = '700' height = ''/>
 </center>
 
-<p>可以看到/home挂载点的容量并没有增加，这是因为目前还只是扩容了LV，但是并未扩容其对应的文件系统，故还需要增加对应文件系统的容量。</p>
-<p>&emsp;&emsp; b. # <code>cat /etc/fstab</code>（确认/home的文件系统类型）  </p>
+<p>可以看到&#x2F;home挂载点的容量并没有增加，这是因为目前还只是扩容了LV，但是并未扩容其对应的文件系统，故还需要增加对应文件系统的容量。</p>
+<p>&amp;emsp;&amp;emsp; b. # <code>cat /etc/fstab</code>（确认&#x2F;home的文件系统类型）  </p>
 <center>
     <img src="http://images.jianmuzi.top/extend_mountpoint/cat_fstab.png" width = '700' height = ''/>
 </center>  
 
-<p>可以看出/home挂载点对应的文件系统类型为xfs类型，故使用xfs_growfs工具对其进行扩容，若是其他文件系统类型，需要使用对应的工具扩容文件系统，如ext4文件系统则要使用resize2fs工具。</p>
-<p>&emsp;&emsp; c. # <code>xfs_growfs /dev/mapper/centos-home</code>（同步LV容量到xfs文件系统）  </p>
-<p>&emsp;&emsp; d. # <code>df -h</code> （查看/home是否已扩容）  </p>
+<p>可以看出&#x2F;home挂载点对应的文件系统类型为xfs类型，故使用xfs_growfs工具对其进行扩容，若是其他文件系统类型，需要使用对应的工具扩容文件系统，如ext4文件系统则要使用resize2fs工具。</p>
+<p>&amp;emsp;&amp;emsp; c. # <code>xfs_growfs /dev/mapper/centos-home</code>（同步LV容量到xfs文件系统）  </p>
+<p>&amp;emsp;&amp;emsp; d. # <code>df -h</code> （查看&#x2F;home是否已扩容）  </p>
 <center>  
     <img src="http://images.jianmuzi.top/extend_mountpoint/df_h_2.png" width = '700' height = ''/>
 </center>  
 
-<p>至此，我们就实现了对指定挂载点/home的扩容。</p>
-<h2 id="三、章末补充"><a href="#三、章末补充" class="headerlink" title="三、章末补充"></a>三、章末补充</h2><h3 id="一）取消扩容（以下操作很危险，会影响服务器中调用-home目录的服务进程）"><a href="#一）取消扩容（以下操作很危险，会影响服务器中调用-home目录的服务进程）" class="headerlink" title="一）取消扩容（以下操作很危险，会影响服务器中调用/home目录的服务进程）"></a>一）取消扩容（以下操作很危险，会影响服务器中调用/home目录的服务进程）</h3><p><strong>目的</strong>：将磁盘sdb扩容到home逻辑卷的容量释放，实现centos磁盘空间重新分配。<br>由于xfs文件系统不能缩小空间，所以只能将/home先卸载，移除新磁盘物理卷移出centos卷组，为/home重建新的逻辑卷，再格式化，并挂载</p>
-<h4 id="1•-备份-home目录下的文件"><a href="#1•-备份-home目录下的文件" class="headerlink" title="1• 备份 /home目录下的文件"></a>1• 备份 /home目录下的文件</h4><blockquote>
+<p>至此，我们就实现了对指定挂载点&#x2F;home的扩容。</p>
+<h2 id="三、章末补充"><a href="#三、章末补充" class="headerlink" title="三、章末补充"></a>三、章末补充</h2><h3 id="一）取消扩容（以下操作很危险，会影响服务器中调用-x2F-home目录的服务进程）"><a href="#一）取消扩容（以下操作很危险，会影响服务器中调用-x2F-home目录的服务进程）" class="headerlink" title="一）取消扩容（以下操作很危险，会影响服务器中调用&#x2F;home目录的服务进程）"></a>一）取消扩容（以下操作很危险，会影响服务器中调用&#x2F;home目录的服务进程）</h3><p><strong>目的</strong>：将磁盘sdb扩容到home逻辑卷的容量释放，实现centos磁盘空间重新分配。<br>由于xfs文件系统不能缩小空间，所以只能将&#x2F;home先卸载，移除新磁盘物理卷移出centos卷组，为&#x2F;home重建新的逻辑卷，再格式化，并挂载</p>
+<h4 id="1•-备份-x2F-home目录下的文件"><a href="#1•-备份-x2F-home目录下的文件" class="headerlink" title="1• 备份 &#x2F;home目录下的文件"></a>1• 备份 &#x2F;home目录下的文件</h4><blockquote>
 <p># <code>tar -czvf /root/home.tgz -C /home .</code></p>
 </blockquote>
 <h4 id="2•-查看备份内容的完整性"><a href="#2•-查看备份内容的完整性" class="headerlink" title="2• 查看备份内容的完整性"></a>2• 查看备份内容的完整性</h4><blockquote>
 <p># <code>tar -tvf /root/home.tgz</code></p>
 </blockquote>
-<h4 id="3•-取消挂载-home"><a href="#3•-取消挂载-home" class="headerlink" title="3• 取消挂载/home"></a>3• 取消挂载/home</h4><blockquote>
+<h4 id="3•-取消挂载-x2F-home"><a href="#3•-取消挂载-x2F-home" class="headerlink" title="3• 取消挂载&#x2F;home"></a>3• 取消挂载&#x2F;home</h4><blockquote>
 <p># <code>umount /dev/mapper/centos-home</code><br># 有可能有target is busy错误，使用<code>umount -l /dev/mapper/centos-home</code>， l表示lazy</p>
 </blockquote>
 <h4 id="4•-移除home逻辑卷"><a href="#4•-移除home逻辑卷" class="headerlink" title="4• 移除home逻辑卷"></a>4• 移除home逻辑卷</h4><blockquote>
-<p># <code>lvremove /dev/mapper/centos-home</code>  # 有可能有Logical volume centos/home contains a filesystem in use.<br># 则使用<code>fuser -m -v -f -k /home</code> 关闭所有home进程（非常危险）</p>
+<p># <code>lvremove /dev/mapper/centos-home</code>  # 有可能有Logical volume centos&#x2F;home contains a filesystem in use.<br># 则使用<code>fuser -m -v -f -k /home</code> 关闭所有home进程（非常危险）</p>
 </blockquote>
 <h4 id="5•-将物理卷sdb1移出centos卷组"><a href="#5•-将物理卷sdb1移出centos卷组" class="headerlink" title="5• 将物理卷sdb1移出centos卷组"></a>5• 将物理卷sdb1移出centos卷组</h4><blockquote>
 <p># <code>vgreduce centos /dev/sdb1</code></p>
 </blockquote>
-<h4 id="6•-为-home重建新的逻辑卷，格式化，并挂载"><a href="#6•-为-home重建新的逻辑卷，格式化，并挂载" class="headerlink" title="6• 为/home重建新的逻辑卷，格式化，并挂载"></a>6• 为/home重建新的逻辑卷，格式化，并挂载</h4><blockquote>
-<p># <code>lvcreate -l +100%FREE -n home centos</code> #重建home逻辑卷<br># <code>mkfs.xfs /dev/centos/home</code>  #格式化为xfs文件系统<br># <code>mount /dev/mapper/centos-home</code>  #将/home挂载出来</p>
+<h4 id="6•-为-x2F-home重建新的逻辑卷，格式化，并挂载"><a href="#6•-为-x2F-home重建新的逻辑卷，格式化，并挂载" class="headerlink" title="6• 为&#x2F;home重建新的逻辑卷，格式化，并挂载"></a>6• 为&#x2F;home重建新的逻辑卷，格式化，并挂载</h4><blockquote>
+<p># <code>lvcreate -l +100%FREE -n home centos</code> #重建home逻辑卷<br># <code>mkfs.xfs /dev/centos/home</code>  #格式化为xfs文件系统<br># <code>mount /dev/mapper/centos-home</code>  #将&#x2F;home挂载出来</p>
 </blockquote>
-<h4 id="7•-验证磁盘sdb空间是否释放并且-home是否重新挂载成功"><a href="#7•-验证磁盘sdb空间是否释放并且-home是否重新挂载成功" class="headerlink" title="7• 验证磁盘sdb空间是否释放并且/home是否重新挂载成功"></a>7• 验证磁盘sdb空间是否释放并且/home是否重新挂载成功</h4><blockquote>
+<h4 id="7•-验证磁盘sdb空间是否释放并且-x2F-home是否重新挂载成功"><a href="#7•-验证磁盘sdb空间是否释放并且-x2F-home是否重新挂载成功" class="headerlink" title="7• 验证磁盘sdb空间是否释放并且&#x2F;home是否重新挂载成功"></a>7• 验证磁盘sdb空间是否释放并且&#x2F;home是否重新挂载成功</h4><blockquote>
 <p># <code>lsblk</code> #查看块设备信息<br># <code>df -h</code> #查看文件系统信息</p>
 </blockquote>
 <h4 id="8•-恢复备份"><a href="#8•-恢复备份" class="headerlink" title="8• 恢复备份"></a>8• 恢复备份</h4><blockquote>
@@ -1114,20 +1099,6 @@ if(canvas.getContext){
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">jianmuzi</span>
-</div>
-<div class="wordcount">
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-line"></i>
-    </span>
-    <span title="站点总字数">13k</span>
-  </span>
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">12 分钟</span>
-  </span>
 </div>
 <div class="busuanzi-count">
     <span class="post-meta-item" id="busuanzi_container_site_uv">
