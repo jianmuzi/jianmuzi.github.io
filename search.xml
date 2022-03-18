@@ -1,113 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CentOS7 更改默认启动内核、删除无用内核</title>
-    <url>/posts/2022-02-11/Boot-Linux/</url>
-    <content><![CDATA[<p>服务器或Linux系统电脑开机，出现多个内核启动选项，CentOS系统默认选择第一个最新的内核启动，但常常这个最新的内核没有作用，有可能会导致服务器或电脑无法自动开机的现象。此时，需要修改系统默认的开机启动内核，附带删除那个无用的内核。</p>
-<h2 id="1。更改默认启动内核"><a href="#1。更改默认启动内核" class="headerlink" title="1。更改默认启动内核"></a>1。更改默认启动内核</h2><h3 id="1）查看系统开机启动的内核选项"><a href="#1）查看系统开机启动的内核选项" class="headerlink" title="1）查看系统开机启动的内核选项"></a>1）查看系统开机启动的内核选项</h3><pre><code class="highlight plaintext">cat /boot/grub2/grub.cfg |grep menuentry</code></pre>
-
-<p>列表（如下三个，对应开机启动的内核选项）：</p>
-<blockquote>
-<p>if [ x”${feature_menuentry_id}” = xy ]; then<br>menuentry_id_option=”–id”<br>menuentry_id_option=””<br>export menuentry_id_option<br><strong>menuentry</strong> ‘CentOS Linux (3.10.0-1160.53.1.el7.x86_64) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-3.10.0-1160.el7.x86_64-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
-<p><strong>menuentry</strong> ‘CentOS Linux (3.10.0-1160.el7.x86_64) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-3.10.0-1160.el7.x86_64-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
-<p><strong>menuentry</strong> ‘CentOS Linux (0-rescue-05a2d16ea7ab4e2983412cb94d46c4c8) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-0-rescue-05a2d16ea7ab4e2983412cb94d46c4c8-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
-</blockquote>
-<h3 id="2）查看系统当前正在使用的内核"><a href="#2）查看系统当前正在使用的内核" class="headerlink" title="2）查看系统当前正在使用的内核"></a>2）查看系统当前正在使用的内核</h3><pre><code class="highlight plaintext">uname -r</code></pre>
-
-<p>显示目前使用内核：</p>
-<blockquote>
-<p>3.10.0-1160.el7.x86_64</p>
-</blockquote>
-<h3 id="3）修改开机默认使用内核"><a href="#3）修改开机默认使用内核" class="headerlink" title="3）修改开机默认使用内核"></a>3）修改开机默认使用内核</h3><pre><code class="highlight plaintext">grub2-set-default &#x27;CentOS Linux (3.10.0-1160.el7.x86_64) 7 (Core)&#x27;</code></pre>
-
-<p>或者（0表示开机启动的内核选项第一个，1表示第二个，依此类推）：</p>
-<pre><code class="highlight plaintext">grub2-set-default 1</code></pre>
-
-<p>有时最后可能需要执行：</p>
-<pre><code class="highlight plaintext">#grub2-mkconfig -o /boot/grub2/grub.cfg ##使配置文件生效</code></pre>
-
-<h3 id="4）检查内核修改结果"><a href="#4）检查内核修改结果" class="headerlink" title="4）检查内核修改结果"></a>4）检查内核修改结果</h3><pre><code class="highlight plaintext">grub2-editenv list</code></pre>
-
-<p>结果：</p>
-<blockquote>
-<p>saved_entry=CentOS Linux (3.10.0-1160.el7.x86_64) 7 (Core)</p>
-</blockquote>
-<p>————————————————————————————————————————————————————</p>
-<h2 id="2。CentOS7-删除多余内核"><a href="#2。CentOS7-删除多余内核" class="headerlink" title="2。CentOS7 删除多余内核"></a>2。CentOS7 删除多余内核</h2><h3 id="1）查看内核列表"><a href="#1）查看内核列表" class="headerlink" title="1）查看内核列表"></a>1）查看内核列表</h3><pre><code class="highlight plaintext">rpm -qa | grep kernel</code></pre>
-
-<p>系统安装的所有内核，如下：</p>
-<blockquote>
-<p>kernel-tools-3.10.0-1160.53.1.el7.x86_64<br>kernel-devel-3.10.0-1160.el7.x86_64<br>kernel-tools-libs-3.10.0-1160.53.1.el7.x86_64<br>kernel-headers-3.10.0-1160.53.1.el7.x86_64<br>kernel-3.10.0-1160.53.1.el7.x86_64<br>kernel-3.10.0-1160.el7.x86_64<br>kernel-devel-3.10.0-1160.53.1.el7.x86_64<br>kernel-devel-3.10.0-1160.42.2.el7.x86_64</p>
-</blockquote>
-<h3 id="2）查看系统当前正在使用内核"><a href="#2）查看系统当前正在使用内核" class="headerlink" title="2）查看系统当前正在使用内核"></a>2）查看系统当前正在使用内核</h3><pre><code class="highlight plaintext">uname -r</code></pre>
-
-<p>显示目前使用内核：</p>
-<blockquote>
-<p>3.10.0-1160.el7.x86_64</p>
-</blockquote>
-<p><em>注意：</em>内核名称“3.10.0-1160.el7.x86_64”中的“l”，不是数字“1”而是字母“l”。</p>
-<h3 id="3）删除多余内核"><a href="#3）删除多余内核" class="headerlink" title="3）删除多余内核"></a>3）删除多余内核</h3><p>命令：rpm -e 内核名称，（yum remove 命令也可以）比如：</p>
-<pre><code class="highlight plaintext">rpm -e kernel-3.10.0-1160.53.1.el7.x86_64</code></pre>
-
-<p>或者使用下面命令删除多余的内核：（以上与以下操作均需确认清楚）</p>
-<pre><code class="highlight plaintext">yum remove kernel-3.10.0-1160.53.1.el7.x86_64</code></pre>]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>boot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>//archives/01/</url>
-    <content><![CDATA[<!--前言-->  
-<p>测试本页代码下载<br>设置永久链接permalink: archives/01，其中01不能带后缀</p>
-<p>测试代码高亮</p>
-<pre><code class="highlight bash">$ hexo new <span class="string">&quot;My New Post&quot;</span>
-
-$ hexo server
-
-$ hexo generate
-
-$ hexo deploy</code></pre>
-
-<span id="more"></span>
-
-
-<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
-      <categories>
-        <category>1</category>
-      </categories>
-      <tags>
-        <tag>name01</tag>
-        <tag>name02</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/posts/2022-03-18/hello-world/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密码错误，请重新输入" data-whm="抱歉，文章不能被校验，但解密后内容还可以看">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b5c19131c9c93fdb74d1f53c9a692dd9ff10d6c404ce7d2429a832f3163abc67">cba72b6624cc4179c4a2196e9b75023fa2fe420773d965718bfe72ffda4b2fb2225db9528bdad5ba5e6014907d4f93fb33eb5ec9089d70daec7631ccf609f7267962a6306d340bedf9ca5716cb12a1a2dcbc424e5dce7e8a0bbd7ee880f52cb84d5eaa32e7b09cb452ed609b5e220a7ede8816aed5b618a531a2556b603e6d8bb245d2e702c191b0c8ac94d31427ea7a170b897160037f12790af582b2f5f2165f8229f75469920fd81dca90eeb09b67edfa8ccd6a34dd9fddbc9214f61e71672ec563e63cddd979f02c5d7bf227f5a0f298d97703c8f8a72165d5cdca6dd413161c4bd749c9f27fac10227e826687b926d171e221d655ba57a4104eba05484830a8a6b54d28fe9d1ac81b1b89399ae014b614821bc02878358475eb53d995397a7b5d34e3156df15c785e50bba37cf56c23cf6911f32fe6bae8a38660788e1d42b58a45e546644aee3476833085a14f7443b6f3c5eb8a37a880bf9bc25124716f6ae9924485b3b14767626ff5b51a4f4fe60c45598332cb48ba88f5222e44e6ac2e4f871a291205d429fa5d31fa302b7dad914b8934ed0bff1ed69bc8d07ddf216ff19644be3ab73a03925682f21a2fdd565494513bad000e0692d41d98c2009afbac1614967e18f7272a49075273bb7615bb3a21026d950fcb75ba788fdde30a31f730bc638a321b3f9fe72040bda3f00d51022532edfb6e758d27afb15bc93b22238b815831a22ecf4550bc949aa5aa55dab2f14d8d1d722533cae0e2ceae2cd45412e9c82cdc9f995bc819afeed962eeb51e47c41de98d6298088a6a2a71b591394df738dd0904c8657c4c275676d5368a6fac48286ddfe39081bf59d873cbfaf9b0568bd444cd24f0310933acd900cae82d975f69426875505a3673eb41804f9304b803dabc813b945b392d1ab80eee3c1cb33451f58a8433b75d4642af092fcc112827e4a875208cd64fc5a49282b56f769a8ae521d22bf41c0951a14f4d35254a6298a3586766470d0edb9d1ff5778166a2cd7237f21a0cbd354493a9b21d181099c75daaa209ebe5cc93a4f742990424a56bc8a84b276163d38d2a44feea1fcabb4a31de9847cdac340dcce798bd331836cbdadb2f95daea8606591a144b36d96f3d8935a9a8ad1adfc839289682a7c8f01b6d8dcd0fab48e0cb0edf79d865ccfd3ef482b966c66b29138004114b62fed58cf9c64a0d522791000dbd05ccf87e9b949229bfd07aed5290b3166cb063db421e2351c892c5729e89eb799d17ecfe29c2d6a88f980bf186a3184d37acc0acc083348ae38de2b77f179770f41c2870e6c5669de109af8cc47e7fec835a482164b58036b9c2a43277b1bb490df364f52923d48b15423a8ba53d165d6e6e01949a59eb3233cb38b02ea771a935843cfa43b6fde58a51944f35efd62fef3ff5f5a6f1bce805b0cde0eb1a3265f943d88c0b147b7b954a2080c2f83e45cec4cb7134d8fb3d1ab80a94b75ab08645d6664e32a66ab454e54f37c67fddfa247853c71cd4d348fb53c4529e40363287badc1bae85015d991e156a796520c87b8950850343b22fc3cd5d628455df660958c383976f13c2d440142582a702e38a763d0b7ccc3d0b8875c95a79232aac8ac0baa1309757defcd76766ca992294c7f98c84e068e2de6fba66497f3873c27b6a057617cc6890a2dd793a3819ff0830be2ecb8c222e37932ff935913f20ceaf61ed46b3514fa00b60e06128c804ae4ab2e3a62646dc10b780f8364b0e708de4ec9463397c0d7446f2cdcc124ada890bbc26c62f9264b49650ee13859608c9b993650376d42687c639a2f0119e902d990257bef4a9a4ef39597abb89589adc9ad4631aec643ad6ec224fa1ee8c13fd38d3d21301aa18367b7c0df640d9faf7fb8218dc0c42ebb05f87eebd540e3ee48e9ce88fd8766e53cb6f4a7ceaf82aa8441bd2e54980a2826382595b652ca22de8d927756bc28af79c39e83c6c68b05744dc693a0f8edd2026d0e219423e47be44622211892e4459e9cfbd32ec71ed316a29ea2741eed48142661fe954849eec612dda221e6336284f40361dcd92e94a271365a5253ad9781a2f1862a7cdeb16eace208aa5d1229c7c35da1cd7db56918a92420baa5137bc41562616472e40434dbf93fbe93d95764d7234f6c6133c3d586c2b2d180887c5744141f7c16a242d808924df3814506253e0e3f06a3c47913dd4637a72f024a7acbc17be2ec9a05e5a6c0de3aadeceb69165ccc45fd7408b18dc9fb8f95d67537c2fbd59525c4f56363888236f8abbecdf6efa3b741f7efbf8be43cf6c0df785e653b0483d3c2bb2578c5faaec878dfb4e3e1577ad11b631</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-shrink">
-      <input class="hbe hbe-input-field hbe-input-field-shrink" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-shrink" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-shrink">请输入密码</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>Start-Page</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算机的概述</title>
     <url>/posts/2021-12-19/Computer-Overviews/</url>
     <content><![CDATA[<p>计算机是由<strong>硬件系统</strong>（hardware system）和<strong>软件系统</strong>（software system）两部分组成的。</p>
@@ -242,23 +135,84 @@ $ hexo deploy</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>测试-abbrlink</title>
-    <url>/posts/2021-11-08/test-abbrlink/</url>
-    <content><![CDATA[<!--前言-->
+    <title>CentOS7 更改默认启动内核、删除无用内核</title>
+    <url>/posts/2022-02-11/Boot-Linux/</url>
+    <content><![CDATA[<p>服务器或Linux系统电脑开机，出现多个内核启动选项，CentOS系统默认选择第一个最新的内核启动，但常常这个最新的内核没有作用，有可能会导致服务器或电脑无法自动开机的现象。此时，需要修改系统默认的开机启动内核，附带删除那个无用的内核。</p>
+<h2 id="1。更改默认启动内核"><a href="#1。更改默认启动内核" class="headerlink" title="1。更改默认启动内核"></a>1。更改默认启动内核</h2><h3 id="1）查看系统开机启动的内核选项"><a href="#1）查看系统开机启动的内核选项" class="headerlink" title="1）查看系统开机启动的内核选项"></a>1）查看系统开机启动的内核选项</h3><pre><code class="highlight plaintext">cat /boot/grub2/grub.cfg |grep menuentry</code></pre>
 
+<p>列表（如下三个，对应开机启动的内核选项）：</p>
+<blockquote>
+<p>if [ x”${feature_menuentry_id}” = xy ]; then<br>menuentry_id_option=”–id”<br>menuentry_id_option=””<br>export menuentry_id_option<br><strong>menuentry</strong> ‘CentOS Linux (3.10.0-1160.53.1.el7.x86_64) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-3.10.0-1160.el7.x86_64-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
+<p><strong>menuentry</strong> ‘CentOS Linux (3.10.0-1160.el7.x86_64) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-3.10.0-1160.el7.x86_64-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
+<p><strong>menuentry</strong> ‘CentOS Linux (0-rescue-05a2d16ea7ab4e2983412cb94d46c4c8) 7 (Core)’ –class centos –class gnu-linux –class gnu –class os –unrestricted $menuentry_id_option ‘gnulinux-0-rescue-05a2d16ea7ab4e2983412cb94d46c4c8-advanced-29a1318e-73f6-4bee-999c-28b6c4ec1bfb’ {</p>
+</blockquote>
+<h3 id="2）查看系统当前正在使用的内核"><a href="#2）查看系统当前正在使用的内核" class="headerlink" title="2）查看系统当前正在使用的内核"></a>2）查看系统当前正在使用的内核</h3><pre><code class="highlight plaintext">uname -r</code></pre>
 
-<p>~test_abbrlink</p>
-<span id="more"></span>
+<p>显示目前使用内核：</p>
+<blockquote>
+<p>3.10.0-1160.el7.x86_64</p>
+</blockquote>
+<h3 id="3）修改开机默认使用内核"><a href="#3）修改开机默认使用内核" class="headerlink" title="3）修改开机默认使用内核"></a>3）修改开机默认使用内核</h3><pre><code class="highlight plaintext">grub2-set-default &#x27;CentOS Linux (3.10.0-1160.el7.x86_64) 7 (Core)&#x27;</code></pre>
 
+<p>或者（0表示开机启动的内核选项第一个，1表示第二个，依此类推）：</p>
+<pre><code class="highlight plaintext">grub2-set-default 1</code></pre>
 
+<p>有时最后可能需要执行：</p>
+<pre><code class="highlight plaintext">#grub2-mkconfig -o /boot/grub2/grub.cfg ##使配置文件生效</code></pre>
 
-<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
+<h3 id="4）检查内核修改结果"><a href="#4）检查内核修改结果" class="headerlink" title="4）检查内核修改结果"></a>4）检查内核修改结果</h3><pre><code class="highlight plaintext">grub2-editenv list</code></pre>
+
+<p>结果：</p>
+<blockquote>
+<p>saved_entry=CentOS Linux (3.10.0-1160.el7.x86_64) 7 (Core)</p>
+</blockquote>
+<p>————————————————————————————————————————————————————</p>
+<h2 id="2。CentOS7-删除多余内核"><a href="#2。CentOS7-删除多余内核" class="headerlink" title="2。CentOS7 删除多余内核"></a>2。CentOS7 删除多余内核</h2><h3 id="1）查看内核列表"><a href="#1）查看内核列表" class="headerlink" title="1）查看内核列表"></a>1）查看内核列表</h3><pre><code class="highlight plaintext">rpm -qa | grep kernel</code></pre>
+
+<p>系统安装的所有内核，如下：</p>
+<blockquote>
+<p>kernel-tools-3.10.0-1160.53.1.el7.x86_64<br>kernel-devel-3.10.0-1160.el7.x86_64<br>kernel-tools-libs-3.10.0-1160.53.1.el7.x86_64<br>kernel-headers-3.10.0-1160.53.1.el7.x86_64<br>kernel-3.10.0-1160.53.1.el7.x86_64<br>kernel-3.10.0-1160.el7.x86_64<br>kernel-devel-3.10.0-1160.53.1.el7.x86_64<br>kernel-devel-3.10.0-1160.42.2.el7.x86_64</p>
+</blockquote>
+<h3 id="2）查看系统当前正在使用内核"><a href="#2）查看系统当前正在使用内核" class="headerlink" title="2）查看系统当前正在使用内核"></a>2）查看系统当前正在使用内核</h3><pre><code class="highlight plaintext">uname -r</code></pre>
+
+<p>显示目前使用内核：</p>
+<blockquote>
+<p>3.10.0-1160.el7.x86_64</p>
+</blockquote>
+<p><em>注意：</em>内核名称“3.10.0-1160.el7.x86_64”中的“l”，不是数字“1”而是字母“l”。</p>
+<h3 id="3）删除多余内核"><a href="#3）删除多余内核" class="headerlink" title="3）删除多余内核"></a>3）删除多余内核</h3><p>命令：rpm -e 内核名称，（yum remove 命令也可以）比如：</p>
+<pre><code class="highlight plaintext">rpm -e kernel-3.10.0-1160.53.1.el7.x86_64</code></pre>
+
+<p>或者使用下面命令删除多余的内核：（以上与以下操作均需确认清楚）</p>
+<pre><code class="highlight plaintext">yum remove kernel-3.10.0-1160.53.1.el7.x86_64</code></pre>]]></content>
       <categories>
-        <category>test</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>abbrlink</tag>
-        <tag>test</tag>
+        <tag>boot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/2022-03-18/hello-world/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密码错误，请重新输入" data-whm="抱歉，文章不能被校验，但解密后内容还可以看">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b5c19131c9c93fdb74d1f53c9a692dd9ff10d6c404ce7d2429a832f3163abc67">cba72b6624cc4179c4a2196e9b75023fa2fe420773d965718bfe72ffda4b2fb2225db9528bdad5ba5e6014907d4f93fb33eb5ec9089d70daec7631ccf609f7267962a6306d340bedf9ca5716cb12a1a2dcbc424e5dce7e8a0bbd7ee880f52cb84d5eaa32e7b09cb452ed609b5e220a7ede8816aed5b618a531a2556b603e6d8bb245d2e702c191b0c8ac94d31427ea7a170b897160037f12790af582b2f5f2165f8229f75469920fd81dca90eeb09b67edfa8ccd6a34dd9fddbc9214f61e71672ec563e63cddd979f02c5d7bf227f5a0f298d97703c8f8a72165d5cdca6dd413161c4bd749c9f27fac10227e826687b926d171e221d655ba57a4104eba05484830a8a6b54d28fe9d1ac81b1b89399ae014b614821bc02878358475eb53d995397a7b5d34e3156df15c785e50bba37cf56c23cf6911f32fe6bae8a38660788e1d42b58a45e546644aee3476833085a14f7443b6f3c5eb8a37a880bf9bc25124716f6ae9924485b3b14767626ff5b51a4f4fe60c45598332cb48ba88f5222e44e6ac2e4f871a291205d429fa5d31fa302b7dad914b8934ed0bff1ed69bc8d07ddf216ff19644be3ab73a03925682f21a2fdd565494513bad000e0692d41d98c2009afbac1614967e18f7272a49075273bb7615bb3a21026d950fcb75ba788fdde30a31f730bc638a321b3f9fe72040bda3f00d51022532edfb6e758d27afb15bc93b22238b815831a22ecf4550bc949aa5aa55dab2f14d8d1d722533cae0e2ceae2cd45412e9c82cdc9f995bc819afeed962eeb51e47c41de98d6298088a6a2a71b591394df738dd0904c8657c4c275676d5368a6fac48286ddfe39081bf59d873cbfaf9b0568bd444cd24f0310933acd900cae82d975f69426875505a3673eb41804f9304b803dabc813b945b392d1ab80eee3c1cb33451f58a8433b75d4642af092fcc112827e4a875208cd64fc5a49282b56f769a8ae521d22bf41c0951a14f4d35254a6298a3586766470d0edb9d1ff5778166a2cd7237f21a0cbd354493a9b21d181099c75daaa209ebe5cc93a4f742990424a56bc8a84b276163d38d2a44feea1fcabb4a31de9847cdac340dcce798bd331836cbdadb2f95daea8606591a144b36d96f3d8935a9a8ad1adfc839289682a7c8f01b6d8dcd0fab48e0cb0edf79d865ccfd3ef482b966c66b29138004114b62fed58cf9c64a0d522791000dbd05ccf87e9b949229bfd07aed5290b3166cb063db421e2351c892c5729e89eb799d17ecfe29c2d6a88f980bf186a3184d37acc0acc083348ae38de2b77f179770f41c2870e6c5669de109af8cc47e7fec835a482164b58036b9c2a43277b1bb490df364f52923d48b15423a8ba53d165d6e6e01949a59eb3233cb38b02ea771a935843cfa43b6fde58a51944f35efd62fef3ff5f5a6f1bce805b0cde0eb1a3265f943d88c0b147b7b954a2080c2f83e45cec4cb7134d8fb3d1ab80a94b75ab08645d6664e32a66ab454e54f37c67fddfa247853c71cd4d348fb53c4529e40363287badc1bae85015d991e156a796520c87b8950850343b22fc3cd5d628455df660958c383976f13c2d440142582a702e38a763d0b7ccc3d0b8875c95a79232aac8ac0baa1309757defcd76766ca992294c7f98c84e068e2de6fba66497f3873c27b6a057617cc6890a2dd793a3819ff0830be2ecb8c222e37932ff935913f20ceaf61ed46b3514fa00b60e06128c804ae4ab2e3a62646dc10b780f8364b0e708de4ec9463397c0d7446f2cdcc124ada890bbc26c62f9264b49650ee13859608c9b993650376d42687c639a2f0119e902d990257bef4a9a4ef39597abb89589adc9ad4631aec643ad6ec224fa1ee8c13fd38d3d21301aa18367b7c0df640d9faf7fb8218dc0c42ebb05f87eebd540e3ee48e9ce88fd8766e53cb6f4a7ceaf82aa8441bd2e54980a2826382595b652ca22de8d927756bc28af79c39e83c6c68b05744dc693a0f8edd2026d0e219423e47be44622211892e4459e9cfbd32ec71ed316a29ea2741eed48142661fe954849eec612dda221e6336284f40361dcd92e94a271365a5253ad9781a2f1862a7cdeb16eace208aa5d1229c7c35da1cd7db56918a92420baa5137bc41562616472e40434dbf93fbe93d95764d7234f6c6133c3d586c2b2d180887c5744141f7c16a242d808924df3814506253e0e3f06a3c47913dd4637a72f024a7acbc17be2ec9a05e5a6c0de3aadeceb69165ccc45fd7408b18dc9fb8f95d67537c2fbd59525c4f56363888236f8abbecdf6efa3b741f7efbf8be43cf6c0df785e653b0483d3c2bb2578c5faaec878dfb4e3e1577ad11b631</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-shrink">
+      <input class="hbe hbe-input-field hbe-input-field-shrink" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-shrink" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-shrink">请输入密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>Start-Page</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -431,6 +385,52 @@ $ hexo deploy</code></pre>
       <tags>
         <tag>Linux</tag>
         <tag>Extend_MountPoint</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试-abbrlink</title>
+    <url>/posts/2021-11-08/test-abbrlink/</url>
+    <content><![CDATA[<!--前言-->
+
+
+<p>~test_abbrlink</p>
+<span id="more"></span>
+
+
+
+<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>abbrlink</tag>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>//archives/01/</url>
+    <content><![CDATA[<!--前言-->  
+<p>测试本页代码下载<br>设置永久链接permalink: archives/01，其中01不能带后缀</p>
+<p>测试代码高亮</p>
+<pre><code class="highlight bash">$ hexo new <span class="string">&quot;My New Post&quot;</span>
+
+$ hexo server
+
+$ hexo generate
+
+$ hexo deploy</code></pre>
+
+<span id="more"></span>
+
+
+<h2 id="01"><a href="#01" class="headerlink" title="01"></a>01</h2><h2 id="02"><a href="#02" class="headerlink" title="02"></a>02</h2><h2 id="03"><a href="#03" class="headerlink" title="03"></a>03</h2>]]></content>
+      <categories>
+        <category>1</category>
+      </categories>
+      <tags>
+        <tag>name01</tag>
+        <tag>name02</tag>
       </tags>
   </entry>
   <entry>
